@@ -21,13 +21,13 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color="#00000059" dark>
+    <v-app-bar app color="black" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>Safe Space</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <!--Learn about space-->
-        <v-menu open-on-hover offset-y>
+        <v-menu open-on-hover offset-y flat>
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" dark v-on="on">Learn about space</v-btn>
           </template>

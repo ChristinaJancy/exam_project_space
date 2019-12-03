@@ -1,47 +1,91 @@
 <template>
-  <v-footer
-    dark
-    padless
-  >
-    <v-card
-      flat
-      tile
-      class="indigo lighten-1 white--text text-center"
-    >
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-        >
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
+  <v-footer padless>
+    <v-card class="flex" tile>
+      <v-img
+        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-523367172-1568809023.jpg"
+        height="400"
+      >
+        <v-card-title class="white--text">
+          <v-spacer></v-spacer>
 
-      <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </v-card-text>
+          <a href="https://facebook.com">
+            <v-btn class="mx-4" dark icon>
+              <i class="fab fa-facebook-square"></i>
+            </v-btn>
+          </a>
+          <a href="https://twitter.com">
+            <v-btn class="mx-4" dark icon>
+              <i class="fab fa-twitter-square"></i>
+            </v-btn>
+          </a>
+          <a href="https://instagram.com">
+            <v-btn class="mx-4" dark icon>
+              <i class="fab fa-instagram"></i>
+            </v-btn>
+          </a>
+          <a href="https://linkedin.com">
+            <v-btn class="mx-4" dark icon>
+              <i class="fab fa-linkedin"></i>
+            </v-btn>
+          </a>
+          
 
-      <v-divider></v-divider>
+          <v-spacer></v-spacer>
+          <br />
+        </v-card-title>
 
-      <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        <!-- Footer Info box-->
+        <div>
+          <v-container align in alignments white--text>
+            <v-row :align="align" no-gutters dense>
+
+              <v-col cols="12" md="6">
+                <v-card-title>Help</v-card-title>
+                <v-card-subtitle class="font-weight-bold white--text">
+                  Info for Parents, Teachers and Caregivers
+                  <br />FAQ
+                  <br />
+                </v-card-subtitle>
+              </v-col>
+
+              <v-col cols="12" md="6">
+                <v-card-title>About Safe Space</v-card-title>
+                <v-card-subtitle class="font-weight-bold white--text">
+                  Organization
+                  <br /> <router-link> Where to find us</router-link>
+                  <br />Contact Us
+                  <br />Career at Safe Space
+                </v-card-subtitle>
+              </v-col>
+            </v-row>
+          </v-container>
+        </div>
+      </v-img>
+      <v-card-text class="py-2 white--text text-center black">
+        {{ new Date().getFullYear() }} —
+        <strong>Mandatory Clothing</strong>
       </v-card-text>
     </v-card>
   </v-footer>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      icons: [
-        'fab fa-facebook',
-        'fab fa-twitter',
-        'fab fa-google-plus',
-        'fab fa-linkedin',
-        'fab fa-instagram',
-      ],
-    }),
-  }
+export default {
+  data: () => ({
+  })
+};
 </script>
+
+<style lang="scss">
+i {
+  font-size: 20px;
+}
+
+a:active,
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+</style>
