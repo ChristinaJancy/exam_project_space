@@ -1,20 +1,9 @@
 <template>
   <v-app>
-    <!-- amp header -->
-    <header class="headerbar">
-      <a href="homepage.html">
-        <amp-img class="home-button" src="icons/home.png" width="36" height="36"></amp-img>
-      </a>
-      <div class="site-name">News Site</div>
-    </header>
-
-    <h3 class="target">
-      <a class="target-anchor" id="top"></a>
-      This is the target.
-      <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
-    </h3>
-
-    <!-- no framework parallax begin -->
+    <!-- Navigation -->
+   <Navigation></Navigation>
+ 
+    <!-- Parallax begins (no framework) -->
     <div class="fixed-parallax">
       <div class="image one"></div>
       <div class="image two"></div>
@@ -25,18 +14,20 @@
       <div class="image three"></div>
       <div class="image four"></div>
     </div>
+
+    <!-- Animated rocket -->
     <AnimatedRocket></AnimatedRocket>
-    
   </v-app>
 </template>
 
 <script>
 import AnimatedRocket from "./components/AnimatedRocket";
+import Navigation from "./components/Navigation";
 
 export default {
   name: "App",
   components: {
-    AnimatedRocket
+    AnimatedRocket, Navigation
   },
   props: {
     source: String
@@ -49,29 +40,15 @@ export default {
 <!-- AMP framweork style -->
 
 <style amp custom>
-:root {
-  --color-primary: #005af0;
-  --color-secondary: #00dcc0;
-  --color-text-light: #fff;
 
-  --space-2: 1rem; /* 16px */
-
-  --box-shadow-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-}
-
-body {
-  background-color: white;
-}
-
-amp-img {
-  background-color: gray;
-  border: 1px solid black;
-}
 </style>
 
 <!-- SCSS style -->
 <style lang="scss">
+#app{
+  margin:0;
+}
+
 .fixed-parallax {
   .image {
     // basic parallax class
@@ -96,6 +73,7 @@ amp-img {
     }
   }
 }
+
 .content {
   text-align: center;
   padding: 50px 30px;
