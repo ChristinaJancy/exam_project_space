@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <!-- Navigation -->
-   <Navigation></Navigation>
- 
+    <Navigation></Navigation>
+
     <!-- Parallax begins (no framework) -->
     <div class="fixed-parallax">
       <div class="image one"></div>
@@ -17,17 +17,21 @@
 
     <!-- Animated rocket -->
     <AnimatedRocket></AnimatedRocket>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import AnimatedRocket from "./components/AnimatedRocket";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
-    AnimatedRocket, Navigation
+    AnimatedRocket,
+    Navigation,
+    Footer
   },
   props: {
     source: String
@@ -35,18 +39,15 @@ export default {
 };
 </script>
 
-
-
 <!-- AMP framweork style -->
 
 <style amp custom>
-
 </style>
 
 <!-- SCSS style -->
 <style lang="scss">
-#app{
-  margin:0;
+#app {
+  margin: 0;
 }
 
 .fixed-parallax {
