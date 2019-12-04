@@ -2,8 +2,9 @@
   <v-footer padless>
     <v-card class="flex" tile>
       <v-img
-        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-523367172-1568809023.jpg"
+        src="https://cdn.dribbble.com/users/164052/screenshots/1323970/attachments/186300/footer-bg.jpg"
         height="400"
+        gradient="to top right, rgba(05,05,05,.7), rgba(00,00,00,.7)"
       >
         <v-card-title class="white--text">
           <v-spacer></v-spacer>
@@ -28,7 +29,6 @@
               <i class="fab fa-linkedin"></i>
             </v-btn>
           </a>
-          
 
           <v-spacer></v-spacer>
           <br />
@@ -38,7 +38,6 @@
         <div>
           <v-container align in alignments white--text>
             <v-row :align="align" no-gutters dense>
-
               <v-col cols="12" md="6">
                 <v-card-title>Help</v-card-title>
                 <v-card-subtitle class="font-weight-bold white--text">
@@ -52,7 +51,7 @@
                 <v-card-title>About Safe Space</v-card-title>
                 <v-card-subtitle class="font-weight-bold white--text">
                   Organization
-                  <br /> <router-link> Where to find us</router-link>
+                  <br />Where to find us
                   <br />Contact Us
                   <br />Career at Safe Space
                 </v-card-subtitle>
@@ -71,14 +70,13 @@
 
 <script>
 export default {
-  data: () => ({
-  })
+  data: () => ({})
 };
 </script>
 
 <style lang="scss">
 i {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 a:active,
@@ -87,5 +85,4 @@ a:hover,
 a:visited {
   text-decoration: none;
 }
-
 </style>
