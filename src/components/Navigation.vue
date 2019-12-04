@@ -1,9 +1,19 @@
 <template>
   <v-card id="nav" class="overflow-hidden">
-    <v-navigation-drawer id="navdrawer" v-model="drawer" app stateless>
+    <v-navigation-drawer id="navdrawer" 
+    v-model="drawer" 
+    app 
+    hide-overlay 
+    disable-route-watcher 
+    color="grey"
+    mobile-break-point
+    temporary
+    floating
+    
+    >
       <v-list>
         <v-list-item-content>
-          <v-list-title>Categories:</v-list-title>
+          <v-list-item-title class="title">Categories</v-list-item-title>
           <v-divider></v-divider>
         </v-list-item-content>
 
@@ -57,11 +67,8 @@
       hide-on-scroll
       elevate-on-scroll
     >
-    <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, #000000, #434343"
-        ></v-img>
+      <template v-slot:img="{ props }">
+        <v-img v-bind="props" gradient="to top right, #000000, #434343"></v-img>
       </template>
       <v-app-bar-nav-icon id="navicon" @click.stop="drawer = !drawer" />
       <v-toolbar-title>Safe Space</v-toolbar-title>
