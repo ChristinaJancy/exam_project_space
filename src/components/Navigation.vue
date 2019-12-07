@@ -189,7 +189,7 @@ export default {
 }
 
 #logo {
-  width: 100px;
+  width: 90px;
   height: 150px;
   margin-top: 20px;
 }
