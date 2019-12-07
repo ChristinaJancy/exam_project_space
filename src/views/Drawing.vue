@@ -1,8 +1,10 @@
 <template>
+
+<v-app id="app">
   <v-card
     id="drawingcard"
     color="transparent"
-    
+
   >
     <v-container fluid>
       <v-row dense>
@@ -69,6 +71,7 @@
     </v-container>
     
   </v-card>
+  </v-app>
 </template>
 
 
@@ -116,5 +119,13 @@
 #drawing{
     height:auto;
 }
+}
+</style>
+
+<style lang="scss" scoped>
+#app{
+background-image: url("https://assetstools.cosentino.com/api/v1/bynder/color/SL6/tablahd/SL6-fullslab.jpg?w=1920&h=1080&fit=crop&auto=compress,format");
+background-size: cover;
+margin-top:-50px;
 }
 </style>
