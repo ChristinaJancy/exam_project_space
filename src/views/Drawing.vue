@@ -2,6 +2,7 @@
   <v-card
     id="drawingcard"
     color="transparent"
+    
   >
     <v-container fluid>
       <v-row dense>
