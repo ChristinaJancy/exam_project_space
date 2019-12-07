@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-<v-card flat width="50%" id="register">
+<v-card flat width="80%" id="register">
     <v-snackbar
       v-model="snackbar"
       absolute
@@ -283,11 +283,8 @@ As long as the website and the information and services on the website are provi
 <style lang="scss">
 #register {
   align-self: center;
-  margin-bottom: 50px;
 }
-#snackbar {
-  margin-top: 100px;
-}
+
 </style>
 
 <style lang="scss" scoped>
