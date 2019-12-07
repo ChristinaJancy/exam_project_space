@@ -1,31 +1,49 @@
 <template>
   <v-content>
     <!-- Parallax begins (no framework) -->
-    <div div="headline">
-      <v-card color="transparent">
-        <v-responsive :aspect-ratio="16/9">
-          <div class="main-title">
-            <h1>Safe Space</h1>
-          </div>
-        </v-responsive>
-      </v-card>
-    </div>
 
+    <v-card color="transparent">
+      <v-responsive :aspect-ratio="16/9">
+        <div class="main-title">
+          <h1>Safe Space</h1>
+        </div>
+      </v-responsive>
+      <!--
+      <div>
+        <p
+          class="codepen"
+          data-height="799"
+          data-theme-id="default"
+          data-default-tab="result"
+          data-user="jcoulterdesign"
+          data-slug-hash="ZxXbeP"
+          style="height: 799px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+        >
+        </p>
+      </div>
+      -->
+      
+    </v-card>
+
+ 
 
     <!-- Animated rocket -->
   </v-content>
 </template>
 
 <!-- import AnimatedRocket from "../components/AnimatedRocket"; -->
-<script>
+<script scoped>
 export default {
   name: "App",
-  components: {},
+  components: {
+  },
   props: {
     source: String
   }
 };
 </script>
+
+
 
 <!-- AMP framweork style -->
 
@@ -61,32 +79,25 @@ export default {
 </style>
 -->
 
+
+
 <style lang="scss">
-.headline {
-  position: relative;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-}
 .main-title {
   color: rgb(255, 0, 0);
-  z-index: 999;
+  z-index: 1;
   position: absolute;
   text-align: center;
   width: 100%;
   h1 {
     font-size: 4rem;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     text-shadow: 4px 8px #000000;
     text-transform: uppercase;
-    margin-top:150px;
+    margin-top: 150px;
   }
 }
-/*Media scaling changes*/
 
+/*Media scaling changes*/
 @media (max-width: 850px) {
   .main-title h1 {
     font-size: 3rem;
@@ -95,7 +106,20 @@ export default {
 @media (max-width: 600px) {
   .main-title h1 {
     font-size: 2rem;
+    margin-top:50px;
+   
   }
 }
+@media (max-width: 300px) {
+  .main-title h1 {
+    margin-top:20px;
+  }
+}
+@media (max-width: 200px) {
+  .main-title h1 {
+    font-size: 1rem;
+  }
+}
+/*..*/
 
 </style>

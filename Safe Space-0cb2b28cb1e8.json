@@ -1,0 +1,19 @@
+{
+  "type": "service_account",
+  "project_id": "safe-space-261116",
+  "private_key_id": "0cb2b28cb1e8184aaa8609928a84737e15229599",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQCNuLJWg7w3aB2/\nEpprhhNxF7JPgFgqgmu7/QXo79/6ACEOnzOg5L3qxqIUdBfnovN6Xb8BcNSM5oRB\nyq57//yPjPHnDaugDi9CmyNFTCMd2pfvA9vjN8emA3qKJ3UD9lOLvDDcImpdkYH5\ntWb7j8odoQrZAUSwuujI6SoWtm8peMivfWfvmoyyRNyxuDuZP8JPw7Q9ZAVIE83K\n1gIfBR2RaVS861VAI1wzWfB+cyFehj/DgCx/736uSXqutNa6kCwfkhmSua/ULkfM\nBYEaE21JUiHN/TXbujhFOU9i10snNHC8mxZqTRKdSz3dxOnWiu5jCPDYNC/P8Wol\nKjaIQEsjAgMBAAECggEAL/Gqy1/XnbroTUqi2PtLune0x/Z4XTEv9zHa/PmhgPbo\nOAUdtzGLGlDGZjr8F03mJqBuTLN6BIy7c3J44tQwAfRBpdPXGteRn2vSW9AtFR1t\nRtu8WLr3HK+SlghRKtz7WIt60A4Ig80E9pAq3bHAQ5PGkrE+JrekpstShMqFArcr\n4FFt0mbnCZ9aHvCs7HDqqpgTaJNW7joioxPTTTtdFZOz7V0CYuhXi4hkHucoSuw0\nR1/ootun2TogavKF2TZRVJv15JhSSSSDPtZnthWBATps3ff2r3F2JODsJ/hSWcgB\n/Zdo111xX+6N3Qs3J22cSOhg0wbaHJKljDQqWgFVuQKBgQDFVNqWC+YsLb6BMN2a\njiO2I573xDR6tQSU/jHC1pRwkjIzJDOq8mfkmIffpCDEzgaUpFcM4hdIMwetaAL8\nu4TWnOaRZkW5BRS5p82MnO6LzPO2sPLGvYbeeMypDQ0LC/3jVDZ/i/mKyQIoWqdt\nSpuxDN6WgtMzs5YsN+JTea01zQKBgQC320viQMMPKmwOpUwoLwKESTWVLDgIpTi1\n3q8BF50FzXmZaj44iSp1p6NXNukrbsPrDHP0/TpQ9Y8fQZp14O3Et3scdd0ntw/l\n1X9vDO570iqwQAGAP5puouEBLG+j8t12GYxLC2C+L7ZgBvElLXCTmGmJ/kZhOypj\nBC5Z2LaUrwJ/d3no3vBVbGpF7fKoOevVs3HdziX9oE35eDxv5IgHWCEsQ8qnfdlH\nDiFMIxw8uuwDD/xwuFwrvIspGtTe+iaPR2G4OFCz5lItOjtfOMPLqtlstjBszefy\nwMBjKfe87fNUxU83sAIQFPefVs+Mj5+cpJYmLvsG5UbWpe8wGVqShQKBgCa+DUWG\nBBSECfUkG+Iz1cHuc14VzVD1D/gzDomaYjpAzCjp3GapcMsOIjtUlNnUI3C6VQ0A\n93Lr69bYSiYg2bmkOEsNAydFShJSZOIPxYlOBjTRp/9QZ8h8hhFrPbM8kDI8u/Vs\nVlx9TV7614HQC3LuoP61GDuQ7iOjU+kW45J9AoGAQ+oH/kSp18WNEBmtg+XS66uD\nzEO5ClOHLEwRxv17Z/G9+e+w6lyr7bj+l0M+aFGlknDQuj3WqsMxkRYivPggTuZS\no3KwrmKSSrkff6/9/oLg4ni6NqjxW4/LN/sfkCdoTS4LwlqeXqpyb2cudr6w6+Yu\nEUFAraQjD5JLZRGTWKI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "christina@safe-space-261116.iam.gserviceaccount.com",
+  "client_id": "117074228243697373490",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/christina%40safe-space-261116.iam.gserviceaccount.com"
+}
+
+
+
+
+
+
+

@@ -24,6 +24,7 @@ export default {
   props: {
     source: String
   }
+
 };
 
 </script>
@@ -35,5 +36,6 @@ export default {
   background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-523367172-1568809023.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top:100px;
 }
 </style>
