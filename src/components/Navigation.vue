@@ -148,13 +148,10 @@
           </v-list>
         </v-menu>
       </v-toolbar-items>
-
-      <!--Search button-->
-
-      <!--search-->
       <template>
+        <!--search bar-->
         <Searchbar></Searchbar>
-        <!--Login page starts here-->
+        <!--login page-->
         <Login></Login>
       </template>
     </v-app-bar>
@@ -193,47 +190,7 @@ export default {
   height: 150px;
   margin-top: 20px;
 }
-.cls-1 {
-  fill: #303f77;
-  isolation: isolate;
-}
-.cls-11,
-.cls-2 {
-  fill: #ce3935;
-}
-.cls-3 {
-  fill: #b2322e;
-}
-.cls-4 {
-  fill: #e19847;
-}
-.cls-5 {
-  fill: #c3853f;
-}
-.cls-6 {
-  fill: #d0ae41;
-}
-.cls-7 {
-  fill: #f1c84a;
-}
-.cls-8 {
-  fill: #b6b8ba;
-}
-.cls-9 {
-  fill: #9ea0a3;
-}
-.cls-10 {
-  fill: #232324;
-}
-.cls-11 {
-  font-size: 74.13px;
-  font-family: BrandonGrotesque-Medium, Brandon Grotesque;
-  font-weight: 500;
-}
 
-#mr-3 {
-  z-index: 4568658545;
-}
 #nav {
   z-index: 9999;
 }

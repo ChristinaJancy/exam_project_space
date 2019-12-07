@@ -10,6 +10,7 @@ import Rocket from './views/Rocket.vue'
 import Astronaut from './views/Astronaut.vue'
 import Event from './views/Event.vue'
 import Drawing from './views/Drawing.vue'
+import Register from './components/Register.vue'
 
 Vue.use(Router, VueMouseParallax)
 
@@ -63,7 +64,12 @@ export default new Router({
       path: '/drawing',
       name: 'drawing',
       component: Drawing
-    },  
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
+    },    
   ]
 })
 
