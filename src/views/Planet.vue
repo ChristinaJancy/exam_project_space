@@ -24,7 +24,6 @@
     
 <!-- Mercury-->
   <v-col>
-    
       <v-card class="mx-auto" max-width="344" color="transparent" flat>
         <v-img src="../assets/solarsystem/—Pngtree—simple blue planet mercury_4563319.png" contain height="200px"></v-img> 
         <div class="planettextback">
