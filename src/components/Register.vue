@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-<v-card flat width="80%" id="register">
+<v-card flat width="80%" id="register" >
     <v-snackbar
       v-model="snackbar"
       absolute
@@ -260,13 +260,12 @@ As long as the website and the information and services on the website are provi
         return (
           this.form.first &&
           this.form.last &&
-            this.form.password &&
-            this.form.email &&
+          this.form.password &&
+          this.form.email &&
           this.form.terms
         )
       },
     },
-
     methods: {
       resetForm () {
         this.form = Object.assign({}, this.defaultForm)
@@ -283,6 +282,14 @@ As long as the website and the information and services on the website are provi
 <style lang="scss">
 #register {
   align-self: center;
+  
+@media (max-width:400){
+  #register{
+    width:100%;
+    margin-bottom:50px;
+  }
+}
+
 }
 
 </style>

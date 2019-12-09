@@ -96,9 +96,11 @@
           </template>
 
           <v-list>
+            <router-link to="/planet">
             <v-list-item>
               <v-list-item-title>Planets</v-list-item-title>
             </v-list-item>
+            </router-link>
             <v-list-item>
               <v-list-item-title>Stars</v-list-item-title>
             </v-list-item>
