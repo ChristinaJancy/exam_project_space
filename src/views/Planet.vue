@@ -215,7 +215,7 @@
                 <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
-                <parallax-element tag="p" :type="type" :parallaxStrength="20">Saturn</parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Uranus</parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
