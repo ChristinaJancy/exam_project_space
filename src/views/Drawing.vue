@@ -7,6 +7,7 @@
             <v-hover>
               <template v-slot="{ hover }">
                 <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
+                  
                   <v-img
                     id="drawing"
                     :src="card.src"

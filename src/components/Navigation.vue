@@ -47,10 +47,11 @@
               <router-link to="/rocket">
                 <v-list-item-title>All about rockets</v-list-item-title>
               </router-link>
+              </v-list-item-content>
               <router-link to="/astronaut">
                 <v-list-item-title>Astronauts</v-list-item-title>
               </router-link>
-            </v-list-item-content>
+            
           </v-list-item>
         </v-list-group>
 
@@ -76,7 +77,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <!--v-app-bar starting-->
+    <!--APP BAR!-->
     <v-app-bar app color="black" dark hide-on-scroll elevate-on-scroll>
       <template v-slot:img="{ props }">
         <v-img v-bind="props" gradient="to top right, #000000, #434343"></v-img>
@@ -90,9 +91,9 @@
       <v-spacer></v-spacer>
       <v-toolbar-items id="headernav">
         <!--Learn about space-->
-        <v-menu offset-y>
+        <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
-            <v-btn color="transparent" dark v-on="on" depressed>Learn about space</v-btn>
+            <v-btn color="transparent" class="navtext" dark v-on="on" depressed><normal>Learn about space</normal></v-btn>
           </template>
 
           <v-list>
@@ -111,14 +112,22 @@
         </v-menu>
 
         <!-- Rockets!-->
+        
         <v-menu open-on-hover offset-y>
+          
           <template v-slot:activator="{ on }">
-            <v-btn color="transparent" dark v-on="on" depressed>This quarters theme: Rockets!</v-btn>
-          </template>
+            <v-btn color="transparent" dark v-on="on" depressed>This quarters theme: Rockets!
+             
+   
 
+            </v-btn>
+          </template>
+        
           <v-list>
             <v-list-item>
+              <router-link to="/rocket">
               <v-list-item-title>All about rockets</v-list-item-title>
+              </router-link>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>Astronauts</v-list-item-title>
@@ -127,7 +136,7 @@
         </v-menu>
 
         <!-- Events and fun stuff-->
-        <v-menu offset-y z-index="999999999">
+        <v-menu offset-y z-index="999999999" open-on-hover>
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" dark v-on="on" depressed>Games and events</v-btn>
           </template>
@@ -182,6 +191,7 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
 #login {
   z-index: 9999;
@@ -197,6 +207,10 @@ export default {
   z-index: 9999;
 }
 
+#navtext{
+  color: #E23E57;
+
+}
 #navdrawer {
   display: none;
   z-index: 99999999999999999999999999;

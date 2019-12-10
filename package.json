@@ -14,6 +14,7 @@
     "haml": "^0.4.3",
     "rellax": "^1.10.0",
     "vue": "^2.6.10",
+    "vue-3d-model": "^1.2.2",
     "vue-mouse-parallax": "^1.2.2",
     "vue-particles": "^1.0.9",
     "vue-read-more": "^1.1.1",

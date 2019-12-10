@@ -2,12 +2,12 @@
   <v-content>
     <!-- Parallax begins (no framework) -->
 
-    <v-card color="transparent">
       <v-responsive :aspect-ratio="16/9">
         <div class="main-title">
-          <h1>Safe Space</h1>
+          <h1 absolute>Safe Space</h1>
         </div>
       </v-responsive>
+
       <!--
       <div>
         <p
@@ -22,12 +22,42 @@
         </p>
       </div>
       -->
-      
-    </v-card>
 
- 
 
     <!-- Animated rocket -->
+    <v-card class="mx-auto transparent"  id="mascot" flat width="100%">
+    <v-container>
+      <v-row>
+        
+        <v-col cols="auto" class="mx-auto">
+           
+          <v-img
+          max-width="300"
+          max-height="400"
+          contain
+          
+            src="../assets/mascot/spaceman mascot.png"
+          ></v-img>
+        </v-col>
+      </v-row>
+       <v-col
+          cols="auto"
+          class="text-center pl-0"
+          style="background-color:#00000070;"
+        >
+          <v-row
+            class="flex-column ma-0 fill-height"
+            justify="center"
+          >
+           <strong class="display-3 white--text text-md-center text-sm-center .d-md-inline .d-sm-inline">Hello everyone!</strong>
+           <br>
+            <p class="display-1 white--text text-md-center text-sm-center .d-md-inline .d-sm-inline">My name is Ceres, and welcome to Safe Space</p>
+            <p class="display-1 white--text text-md-center text-sm-center .d-md-inline .d-sm-inline">- a place to play games, and have fun while learning!</p>
+          </v-row>
+        </v-col>
+    </v-container>
+  </v-card>
+
   </v-content>
 </template>
 
@@ -82,8 +112,13 @@ export default {
 
 
 <style lang="scss">
+#mascot{
+margin-top: -900px;
+padding-bottom:500px;
+}
+
 .main-title {
-  color: rgb(255, 0, 0);
+  color:#F4D80A;
   z-index: 1;
   position: absolute;
   text-align: center;

@@ -14,7 +14,6 @@ import Register from './components/Register.vue'
 
 Vue.use(Router, VueMouseParallax)
 
-
 export default new Router({
   base: process.env.BASE_URL, scrollBehavior(){
       document.getElementById('app').scrollIntoView();

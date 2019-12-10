@@ -33,7 +33,7 @@ export default {
 <style>
 #app {
   margin: 0;
-  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-523367172-1568809023.jpg");
+  background-image: url("../src/assets/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top:100px;
