@@ -18,6 +18,18 @@
       :clickEffect="false"
       clickMode="push"
     ></vue-particles>
+<v-card color="transparent"
+    class="mx-auto"
+    max-width="700"
+    flat
+        >
+          <v-card-title id="pheader">Planets</v-card-title>
+          <v-spacer></v-spacer>
+
+          <v-card-subtitle id="pheader2">
+          - scroll down to see them all!
+          </v-card-subtitle>
+        </v-card>
 
     <div class="container">
      
@@ -27,21 +39,30 @@
                 :easing="easing"
               >
                 <img :src="image1" style="opacity:0;" class="image" alt />
-                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
-                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
-                <parallax-element tag="p" :type="type" :parallaxStrength="20">Mercury</parallax-element>
-                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                <parallax-element :type="rotation" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="rotation" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="rotation" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="rotation" :parallaxStrength="20">Mercury</parallax-element>
+                <parallax-element :type="rotation" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="rotation" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
    
     </div>
-<v-responsive :aspect-ratio="20/9">
+
+    
+<v-responsive :aspect-ratio="16/9">
 </v-responsive>
 
-<!-- next planet-->
+<!-- Planet Venus-->
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -55,14 +76,22 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
     </div>
-<v-responsive :aspect-ratio="20/9">
+</v-lazy>
+<v-responsive :aspect-ratio="16/9">
 </v-responsive>
 
-<!-- Planet-->
+
+<!-- Planet Earth-->
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -78,12 +107,20 @@
               </parallax-container>
    
     </div>
-<v-responsive :aspect-ratio="20/9">
+</v-lazy>
+<v-responsive :aspect-ratio="16/9">
 </v-responsive>
 
-<!-- Planet-->
+<!-- Planet Mars-->
+   <v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -97,14 +134,21 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
     </div>
-<v-responsive :aspect-ratio="20/9">
+   </v-lazy>
+<v-responsive :aspect-ratio="16/9">
 </v-responsive>
 
-<!-- next planet-->
+<!-- Planet Jupiter-->
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -118,14 +162,22 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
     </div>
+</v-lazy>
 <v-responsive :aspect-ratio="20/9">
 </v-responsive>
 
-<!-- Planet-->
+
+<!-- Planet Saturn-->
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -139,14 +191,21 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
     </div>
+</v-lazy>
 <v-responsive :aspect-ratio="20/9">
 </v-responsive>
 
 <!-- next planet-->
+    <v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -160,12 +219,23 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
     </div>
+  </v-lazy>  
+
 <v-responsive :aspect-ratio="20/9">
 </v-responsive>
 
-<!-- Planet-->
+
+<!-- Planet Neptune-->
+
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
      
               <parallax-container
@@ -181,14 +251,22 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
     </div>
+    </v-lazy>
 <v-responsive :aspect-ratio="20/9">
 </v-responsive>
 
-<!-- Planet-->
+
+<!-- Planet Pluto-->
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
     <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -204,6 +282,7 @@
               </parallax-container>
    
     </div>
+</v-lazy>
 
     <!--random svg test-->
     <!-- <v-img id="layerplanet" src="../assets/planet1.png"></v-img> -->
@@ -214,6 +293,9 @@
 
 <script>
 export default {
+ 
+  data: () => ({
+  isActive: false,
   show: false,
   show2: false,
   show3: false,
@@ -223,7 +305,7 @@ export default {
   show7: false,
   show8: false,
   show9: false,
-  data: () => ({})
+  })
 };
 </script>	
 
@@ -276,6 +358,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 .container {
   text-align: center;
   display: flex;
@@ -324,6 +409,12 @@ p {
   font-family: "Press Start 2P", cursive;
   text-align: center;
   text-transform: uppercase;
+}
+
+#pheader, #pheader2{
+  font-family: "Press Start 2P", cursive;
+  color: rgb(255, 145, 0);
+  text-shadow: 4px 4px #000000;
 }
 </style>
 
