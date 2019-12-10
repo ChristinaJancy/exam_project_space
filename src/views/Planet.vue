@@ -1,318 +1,229 @@
 <template>
   <v-app id="app">
-<template>
+    <vue-particles
+      class="particle"
+      color="#F4D80A"
+      :particleOpacity="0.9"
+      linesColor="#FFE302"
+      :particlesNumber="80"
+      shapeType="circle"
+      :particleSize="0.5"
+      :linesWidth="2"
+      :lineLinked="false"
+      :lineOpacity="0.4"
+      :linesDistance="150"
+      :moveSpeed="3"
+      :hoverEffect="false"
+      hoverMode="grab"
+      :clickEffect="false"
+      clickMode="push"
+    ></vue-particles>
 
-  <div class="container">
-    <parallax-container class="image-container" :animationDuration="duration" :easing="easing">
-      <img :src="image1" style="opacity:0;" class="image" alt />
-      <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
-      <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-      <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
-      <parallax-element tag="p" :type="type" :parallaxStrength="20">Pluto</parallax-element>
-      <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-      <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
-    </parallax-container>
-  </div>
-</template>
-
-
-
-
-    <div class="wrap-banner">
-      <vue-particles
-        class="particle"
-        color="#F4D80A"
-        :particleOpacity="0.9"
-        linesColor="#FFE302"
-        :particlesNumber="80"
-        shapeType="circle"
-        :particleSize="0.5"
-        :linesWidth="2"
-        :lineLinked="false"
-        :lineOpacity="0.4"
-        :linesDistance="150"
-        :moveSpeed="3"
-        :hoverEffect="false"
-        hoverMode="grab"
-        :clickEffect="false"
-        clickMode="push"
-      ></vue-particles>
-      <v-col>
-        <v-row>
-
-          
-
-          <!-- Mercury-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/mercury.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Mercury</v-card-title>
-                <v-card-subtitle>Nr.1 - The smallest planet</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show =!show">
-                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show">
-                    <v-divider></v-divider>
-                    <v-card-text>“The closest planet to the sun that orbits the sun within only 87.9 earth days, should be the hottest planet in the whole solar system”, one would think. Even though this is not entirely true, one would not be mistaken for thinking that way. Mercury has the most ironic temperature rage in the whole solar system. Since the planet virtually has no atmosphere, it makes it difficult for the sun to travel from the daylight side to the night side. This means that one half of the planet is always extremely hot at +430 degree C, while the other is so cold at -180 degree C. So to live on this planet, you would either burn or freeze to death instantly.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-
-          <!-- Jupiter-->
-          <v-col>
-            <v-hover v-slot:default="{ hover }">
-              <v-card
-                class="mx-auto"
-                max-width="344"
-                color="transparent"
-                :elevation="hover ? 12 : 0"
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
               >
-                <v-img src="../assets/solarsystem/jupiter.png" height="200px"></v-img>
-                <div class="planettextback">
-                  <v-card-title>Jupiter</v-card-title>
-                  <v-card-subtitle>Nr. 5 - The largest planet</v-card-subtitle>
-                  <v-card-actions>
-                    <v-btn color="yellow" text>Explore</v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn icon @click="show2 =!show2">
-                      <v-icon>{{ show2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <!-- v-show="show"-->
-                  <v-expand-transition>
-                    <div v-show="show2">
-                      <v-divider></v-divider>
-                      <v-card-text>Jupiter is the 5th and the largest planet in the solar system almost more than twice the mass as all the other planets put together. This planet is always referred to as the giant planet, due to its amazing size. Jupiter is almost made of gas with almost 75% hydrogen, and 24% helium. Its core is presumed rocky hard, while surrounded with a sea with metallic liquid.</v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </div>
-              </v-card>
-            </v-hover>
-          </v-col>
-
-          <!-- Saturn-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/saturn.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Saturn</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show3=!show3">
-                    <v-icon>{{ show3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show3">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-
-          <!--Earth-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/earth.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Earth</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show4=!show4">
-                    <v-icon>{{ show4 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show4">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-
-
-      <v-img id="layerrocket" src="../assets/rocketparallax.png"></v-img>
-          <!-- mars -->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/mars.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Mars</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show5=!show5">
-                    <v-icon>{{ show5 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show5">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-
-          <!--neptune-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/neptune.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Neptune</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show6=!show6">
-                    <v-icon>{{ show6 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show6">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-
-          <!--Venus-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/venus.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Neptune</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show7=!show7">
-                    <v-icon>{{ show7 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show7">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-
-          <!--Uranus-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/uranus.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Uranus</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show8=!show8">
-                    <v-icon>{{ show8 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show8">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-          <!--Pluto-->
-          <v-col>
-            <v-card class="mx-auto" max-width="344" color="transparent" flat>
-              <v-img src="../assets/solarsystem/pluto.png" height="200px"></v-img>
-              <div class="planettextback">
-                <v-card-title>Pluto</v-card-title>
-                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
-                <v-card-actions>
-                  <v-btn color="yellow" text>Explore</v-btn>
-                  <v-spacer></v-spacer>
-                  <v-btn icon @click="show9=!show9">
-                    <v-icon>{{ show9 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                  <div v-show="show9">
-                    <v-divider></v-divider>
-                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-col>
-
-      <!--random svg test-->
-      <!-- <v-img id="layerplanet" src="../assets/planet1.png"></v-img> -->
-
-      <v-img id="layerastronaut" src="../assets/astronaut.png"></v-img>
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Mercury</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
     </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- next planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Venus</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- Planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Earth</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- Planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Mars</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- next planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Jupiter</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- Planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Saturn</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- next planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Saturn</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- Planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Neptune</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+<v-responsive :aspect-ratio="20/9">
+</v-responsive>
+
+<!-- Planet-->
+    <div class="container">
+     
+              <parallax-container
+                class="image-container"
+                :animationDuration="duration"
+                :easing="easing"
+              >
+                <img :src="image1" style="opacity:0;" class="image" alt />
+                <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="type" :parallaxStrength="20">Pluto</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+              </parallax-container>
+   
+    </div>
+
+    <!--random svg test-->
+    <!-- <v-img id="layerplanet" src="../assets/planet1.png"></v-img> -->
+
+    <v-img id="layerastronaut" src="../assets/astronaut.png"></v-img>
   </v-app>
 </template>
 
 <script>
 export default {
-  el: "app",
-  data: () => ({
-    show: false,
-    show2: false,
-    show3: false,
-    show4: false,
-    show5: false,
-    show6: false,
-    show7: false,
-    show8: false,
-    show9: false,
-    
- 
-    
-    
-    planet: [
-      {
-        id: 1,
-        title: "The Sun",
-        subtitle: "very exciting",
-        about:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        src: "../assets/planet1.png"
-      },
-      {
-        id: 2,
-        title: "The Moon",
-        subtitle: "Hey I'm a moon",
-        about:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        src: "../assets/planet1.png"
-      }
-    ]
-  }),
+  show: false,
+  show2: false,
+  show3: false,
+  show4: false,
+  show5: false,
+  show6: false,
+  show7: false,
+  show8: false,
+  show9: false,
+  data: () => ({})
 };
 </script>	
 
@@ -325,7 +236,7 @@ import image5 from "@/assets/mouse-parallax/5.19bc2110.png";
 -->
 
 
-<script>
+<script scoped>
 import parallaxContainer from "@/components/parallax-container.vue";
 import parallaxElement from "@/components/parallax-element.vue";
 import image1 from "@/assets/mouse-parallax/1.8125ea14.png";
@@ -366,7 +277,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  height: 70vh;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,24 +314,29 @@ img {
 
 p {
   position: absolute;
-  color:white;
+  color: rgb(255, 145, 0);
+  text-shadow: 4px 8px #000000;
   top: 60%;
   font-size: 40px;
   font-weight: 700;
   left: 0;
   right: 0;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
   text-transform: uppercase;
 }
-
 </style>
 
 
-
-
 <style lang="scss" scoped>
-#parallaxcontainer{
-  position: relative
+@media (max-width: 850px) {
+  p {
+    font-size: 20px;
+    margin-top: -180px;
+  }
+}
+#parallaxcontainer {
+  position: relative;
 }
 
 #app {
@@ -432,7 +348,7 @@ p {
 }
 </style>
   
-<style lang="scss">
+<style lang="scss" scoped>
 .particle {
   height: 100%;
   width: 100%;
@@ -454,10 +370,12 @@ p {
 
 #layerrocket {
   margin-left: -100px;
-
 }
 
 #layerastronaut {
   position: relative;
 }
 </style>
+
+
+

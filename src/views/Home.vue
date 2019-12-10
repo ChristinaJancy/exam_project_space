@@ -111,7 +111,7 @@ export default {
 
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 #mascot{
 margin-top: -900px;
 padding-bottom:500px;
