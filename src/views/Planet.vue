@@ -1,5 +1,7 @@
 <template>
-  <v-app id="app" fixed>
+<v-app id="app">
+  <div id="planetapp">
+     
     <vue-particles
       class="particle"
       color="#F4D80A"
@@ -18,6 +20,7 @@
       :clickEffect="false"
       clickMode="push"
     ></vue-particles>
+    
 <v-card color="transparent"
     class="mx-auto"
     max-width="700"
@@ -32,7 +35,10 @@
         </v-card>
 
     <div class="container">
-     
+<v-row justify="center" >
+<v-col cols="auto" class="mx-auto py-0"> 
+  <v-row>  
+    <v-col>  
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -40,22 +46,27 @@
               >
                 <img :src="image1" style="opacity:0;" class="image" alt />
                
-                <parallax-element :type="rotation" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                <parallax-element :type="rotation" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
-                <parallax-element tag="p" :type="rotation" :parallaxStrength="20">Mercury</parallax-element>
-                <parallax-element :type="rotation" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                <parallax-element :type="rotation" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                <parallax-element tag="p" :type="depth" :parallaxStrength="20">Mercury</parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
-    </div>
-
-    
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
+    </v-col>
+    <v-col class="my-auto mx-auto">
+  <v-card-title>Hello I am Mercury</v-card-title>
+  <v-card-text></v-card-text>
+</v-col>
+</v-row>
 
 <!-- Planet Venus-->
-
-    <div class="container">
+<v-card flat color="transparent">
+<v-row>  
+<v-col class="my-auto mx-auto">
+  <v-card-title>Hello I am Venus</v-card-title>
+  <v-card-text></v-card-text>
+</v-col>
+<v-col>
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -69,22 +80,16 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-    </div>
-
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
-
+</v-col>
+</v-row>
+</v-card>
+   
 
 <!-- Planet Earth-->
-<v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
+<v-card flat color="transparent">
+<v-row>
+    
+<v-col cols="auto" class="mx-auto">
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -98,22 +103,18 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
-    </div>
-</v-lazy>
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
+</v-col>
+<v-col class="my-auto mx-auto">
+  <v-card-title>Hello I am Mercury</v-card-title>
+  <v-card-text></v-card-text>
+</v-col>
+</v-row>
+</v-card>
+
 
 <!-- Planet Mars-->
-   <v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
+
+<v-row>
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -128,21 +129,14 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-    </div>
-   </v-lazy>
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
+</v-row>
+
+<v-row>
+
 
 <!-- Planet Jupiter-->
-<v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
+
+   
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -156,22 +150,13 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-    </div>
-</v-lazy>
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
+</v-row>
 
 
+<v-row>
 <!-- Planet Saturn-->
-<v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
+   
+  
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -185,21 +170,10 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-    </div>
-</v-lazy>
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
-
+    </v-row>
+<v-row>
 <!-- Planet Uranus-->
-    <v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
+    
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -213,25 +187,12 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-    </div>
-  </v-lazy>  
-
-<v-responsive :aspect-ratio="20/9">
-</v-responsive>
+</v-row>
 
 
 <!-- Planet Neptune-->
+<v-row>
 
-<v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
-     
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -245,22 +206,11 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-    </div>
-    </v-lazy>
-<v-responsive :aspect-ratio="16/9">
-</v-responsive>
+    </v-row>
 
 
 <!-- Planet Pluto-->
-<v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
-    <div class="container">
+   <v-row>
               <parallax-container
                 class="image-container"
                 :animationDuration="duration"
@@ -274,15 +224,16 @@
                 <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
-   
+   </v-row>
+</v-col>
+</v-row>
     </div>
-</v-lazy>
-
     <!--random svg test-->
     <!-- <v-img id="layerplanet" src="../assets/planet1.png"></v-img> -->
 
-    <v-img id="layerastronaut" src="../assets/astronaut.png"></v-img>
-  </v-app>
+
+  </div>
+</v-app>
 </template>
 
 <!-- 
@@ -314,9 +265,11 @@ import image5 from "@/assets/mouse-parallax/5.19bc2110.png";
 <script>
 export default {
   data: () => ({
-  isActive: false,
+  isActive: true,
+  
   }),
 }
+
 </script>
 
 
@@ -375,7 +328,8 @@ export default {
       image12,
       image13
     };
-  }
+  },
+  
 };
 </script>
 
@@ -436,24 +390,25 @@ p {
   color: rgb(255, 145, 0);
   text-shadow: 4px 4px #000000;
 }
-</style>
 
-
-<style lang="scss" scoped>
-@media (max-width: 850px) {
-  p {
-    font-size: 20px;
-    margin-top: -180px;
-  }
+#app{
+  background: black;
+  margin-top:-80px;
+  enable-background: 100%;
 }
 
-#app {
+#planetapp {
   background-size: cover;
-  background-image: url(../assets/background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: url(../assets/background.jpg) fixed center center;
   background-attachment: fixed;
+  -moz-background-attachment: fixed;
   background-repeat: no-repeat;
-  margin-top: -50px;
- 
+  position: relative;
+  margin:-50px 0 50px 0;
+ border-image: 50%;
 }
 
 .particle {
@@ -462,10 +417,31 @@ p {
   position: absolute;
 }
 
-#layerastronaut {
-  position: relative;
+/*@Media scaling*/
+
+@media (max-width: 850px) {
+  p {
+    font-size: 20px;
+    margin-top: -180px;
+  }
 }
 
+@media (max-width: 400px){
+  .container{
+  row-gap: 0;
+  }
+ p{
+   font-size: 15px;
+    margin-top: -180px
+ }
+}
+
+@media (max-width:230px){
+  p{
+    font-size:10px;
+    margin-top:-230px;
+  }
+}
 </style>
   
 

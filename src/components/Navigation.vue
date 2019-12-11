@@ -102,12 +102,18 @@
               <v-list-item-title>Planets</v-list-item-title>
             </v-list-item>
             </router-link>
+
+            <router-link to="/star">
             <v-list-item>
               <v-list-item-title>Stars</v-list-item-title>
             </v-list-item>
+            </router-link>
+            
+            <router-link to="/sun">
             <v-list-item>
               <v-list-item-title>Sun</v-list-item-title>
             </v-list-item>
+            </router-link>
           </v-list>
         </v-menu>
 
@@ -124,14 +130,16 @@
           </template>
         
           <v-list>
+             <router-link to="/rocket">
             <v-list-item>
-              <router-link to="/rocket">
               <v-list-item-title>All about rockets</v-list-item-title>
-              </router-link>
             </v-list-item>
+             </router-link>
+             <router-link to="/astronaut">
             <v-list-item>
               <v-list-item-title>Astronauts</v-list-item-title>
             </v-list-item>
+             </router-link>
           </v-list>
         </v-menu>
 
