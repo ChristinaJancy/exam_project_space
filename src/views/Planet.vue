@@ -19,6 +19,7 @@
         :clickEffect="false"
         clickMode="push"
       ></vue-particles>
+ 
 
       <v-card color="transparent" class="mx-auto" max-width="700" flat>
         <v-card-title id="pheader">The Solar System</v-card-title>
