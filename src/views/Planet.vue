@@ -291,7 +291,7 @@
   </v-app>
 </template>
 
-<script>
+<!-- 
 export default {
  
   data: () => ({
@@ -307,7 +307,8 @@ export default {
   show9: false,
   })
 };
-</script>	
+
+-->
 
 <!-- actual image 1-5
 import image1 from "@/assets/mouse-parallax/1.8125ea14.png";
@@ -337,6 +338,7 @@ import image12 from "@/assets/solarsystem/pluto.png";
 import image13 from "@/assets/solarsystem/jupiter.png";
 
 export default {
+  
   props: {
     type: {
       type: String,
@@ -369,15 +371,14 @@ export default {
       image10,
       image11,
       image12,
-      image13
+      image13,
+      isActive: false
     };
   }
 };
 </script>
 
 <style lang="scss" scoped>
-
-
 
 .container {
   text-align: center;
@@ -444,9 +445,6 @@ p {
     margin-top: -180px;
   }
 }
-#parallaxcontainer {
-  position: relative;
-}
 
 #app {
   background-size: cover;
@@ -454,37 +452,21 @@ p {
   background-attachment: fixed;
   background-repeat: no-repeat;
   margin-top: -50px;
+  -webkit-background-clip: content-box;
 }
-</style>
-  
-<style lang="scss" scoped>
+
 .particle {
   height: 100%;
   width: 100%;
   position: absolute;
 }
 
-.planettextback {
-  transition: ease 0.5s;
-}
-
-.planettextback:hover {
-  background-color: rgba(255, 255, 255, 0.26);
-  transition: ease 0.5s;
-}
-
-#layerplanet {
-  position: relative;
-}
-
-#layerrocket {
-  margin-left: -100px;
-}
-
 #layerastronaut {
   position: relative;
 }
+
 </style>
+  
 
 
 
