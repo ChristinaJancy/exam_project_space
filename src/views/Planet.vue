@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app">
+  <v-app id="app" fixed>
     <vue-particles
       class="particle"
       color="#F4D80A"
@@ -54,14 +54,7 @@
 </v-responsive>
 
 <!-- Planet Venus-->
-<v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: .5
-        }"
-        min-height="200"
-        transition="fade-transition"
-      >
+
     <div class="container">
               <parallax-container
                 class="image-container"
@@ -77,7 +70,7 @@
                 <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
               </parallax-container>
     </div>
-</v-lazy>
+
 <v-responsive :aspect-ratio="16/9">
 </v-responsive>
 
@@ -318,6 +311,14 @@ import image3 from "@/assets/mouse-parallax/3.4ee471cf.png";
 import image4 from "@/assets/mouse-parallax/4.4c33fe51.png";
 import image5 from "@/assets/mouse-parallax/5.19bc2110.png";
 -->
+<script>
+export default {
+  data: () => ({
+  isActive: false,
+  }),
+}
+</script>
+
 
 
 <script scoped>
@@ -372,8 +373,7 @@ export default {
       image10,
       image11,
       image12,
-      image13,
-      isActive: false
+      image13
     };
   }
 };
