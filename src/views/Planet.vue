@@ -22,10 +22,10 @@
  
 
       <v-card color="transparent" class="mx-auto" max-width="700" flat>
-        <v-card-title id="pheader">The Solar System</v-card-title>
+        <v-card-title id="pheader">Our Solar System</v-card-title>
         <v-spacer></v-spacer>
 
-        <v-card-subtitle id="pheader2">- Scroll down to see The Solar System</v-card-subtitle>
+        <v-card-subtitle id="pheader2">- Scroll down to see Our Solar System</v-card-subtitle>
       </v-card>
 
       <!-- All planets begins here-->
