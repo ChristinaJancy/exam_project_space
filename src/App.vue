@@ -33,8 +33,7 @@ export default {
 <style>
 #app {
   margin: 0;
-  background-image: url("../src/assets/background2.png");
-  background-repeat: no-repeat;
+  background-image:linear-gradient(#240015, #060016, #000000);  
   background-size: cover;
   padding-top:100px;
 }

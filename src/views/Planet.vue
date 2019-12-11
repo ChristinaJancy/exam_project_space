@@ -21,18 +21,45 @@
       ></vue-particles>
 
       <v-card color="transparent" class="mx-auto" max-width="700" flat>
-        <v-card-title id="pheader">Planets</v-card-title>
+        <v-card-title id="pheader">The Solar System</v-card-title>
         <v-spacer></v-spacer>
 
-        <v-card-subtitle id="pheader2">- Scroll to see all the planets</v-card-subtitle>
+        <v-card-subtitle id="pheader2">- Scroll down to see The Solar System</v-card-subtitle>
       </v-card>
 
       <!-- All planets begins here-->
       <div class="container">
         <v-row justify="center">
           <v-col cols="auto" class="mx-auto py-0">
-            <!--planet Mercury-->
 
+
+            <v-row>
+               <v-col class="mx-auto my-auto">
+                   <v-expansion-panels inset popout focusable>
+                      <v-expansion-panel>
+                        <v-expansion-panel-header class="planetpaneltext">About the Sun</v-expansion-panel-header>
+                        <v-expansion-panel-content>The size of the Sun compared to the largest known stars (red giants) is not very big. However, if compared to the most common type of star in the universe, the red dwarf, the Sun is quite a bit larger. Thus, the Sun is not the biggest type of star in the universe, but it is definitely larger than most.</v-expansion-panel-content>
+                      </v-expansion-panel>
+                    </v-expansion-panels>
+             </v-col>
+              <v-col cols="auto" class="mx-auto">
+                <parallax-container
+                  class="image-container"
+                  :animationDuration="duration"
+                  :easing="easing"
+                  
+                >
+                  <img :src="image1" style="opacity:0;" class="image" alt />
+                  <parallax-element :type="depth" :parallaxStrength="5" tag="img" :src="image14"></parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="10">The Sun</parallax-element>
+                  
+                 
+                </parallax-container>
+              </v-col>
+           
+            </v-row>
+
+            <!--planet Mercury-->
             <v-row>
                <v-col class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
@@ -352,6 +379,7 @@ import image10 from "@/assets/solarsystem/neptune.png";
 import image11 from "@/assets/solarsystem/earth.png";
 import image12 from "@/assets/solarsystem/pluto.png";
 import image13 from "@/assets/solarsystem/jupiter.png";
+import image14 from "@/assets/solarsystem/sun.png";
 
 export default {
   props: {
@@ -386,7 +414,8 @@ export default {
       image10,
       image11,
       image12,
-      image13
+      image13,
+      image14
     };
   }
 };

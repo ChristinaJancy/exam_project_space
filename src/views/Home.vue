@@ -1,63 +1,37 @@
 <template>
   <v-content>
     <!-- Parallax begins (no framework) -->
-
-      <v-responsive :aspect-ratio="16/9">
+<v-col cols="auto" class="mx-auto">
+  <v-row class="mx-auto" justify="center">
         <div class="main-title">
           <h1 absolute>Safe Space</h1>
         </div>
-      </v-responsive>
 
-      <!--
-      <div>
-        <p
-          class="codepen"
-          data-height="799"
-          data-theme-id="default"
-          data-default-tab="result"
-          data-user="jcoulterdesign"
-          data-slug-hash="ZxXbeP"
-          style="height: 799px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+
+   
+      <v-col
+          cols="auto"
+          class="text-center"
+          style="margin-top:200x;"
         >
-        </p>
-      </div>
-      -->
-
-
-    <!-- Animated rocket -->
-    <v-card class="mx-auto transparent"  id="mascot" flat width="100%">
-    <v-container>
-      <v-row>
         
-        <v-col cols="auto" class="mx-auto">
-           
-          <v-img
-          max-width="300"
+      
+      <v-img
+          max-width="400"
           max-height="400"
           contain
-          
-            src="../assets/mascot/spaceman mascot.png"
+           src="../assets/mascot/spaceman mascot.png"
           ></v-img>
-        </v-col>
-      </v-row>
-       <v-col
-          cols="auto"
-          class="text-center pl-0"
-          style="background-color:#00000070;"
-        >
-          <v-row
-            class="flex-column ma-0 fill-height"
-            justify="center"
-          >
-           <strong class="display-3 white--text text-md-center text-sm-center .d-md-inline .d-sm-inline">Hello everyone!</strong>
-           <br>
-            <p class="display-1 white--text text-md-center text-sm-center .d-md-inline .d-sm-inline">My name is Ceres, and welcome to Safe Space</p>
-            <p class="display-1 white--text text-md-center text-sm-center .d-md-inline .d-sm-inline">- a place to play games, and have fun while learning!</p>
-          </v-row>
-        </v-col>
-    </v-container>
-  </v-card>
-
+          <!-- <div style="background-color:#00000070;">
+          <h2 tag="h2" class="white--text text-md-center text-sm-center ">Hello, I am Ceres!</h2>
+          <p tag="p" class="white--text text-md-center text-sm-center ">and welcome to Safe Space</p>
+          <p tag="p" class="white--text text-md-center text-sm-center">-a place to have fun while learning!</p>
+     </div> -->
+      </v-col>
+   </v-row>
+</v-col>
+ <v-responsive :aspect-ratio="16/9">
+ </v-responsive>
   </v-content>
 </template>
 
@@ -112,10 +86,7 @@ export default {
 
 
 <style lang="scss" scoped>
-#mascot{
-margin-top: -900px;
-padding-bottom:500px;
-}
+
 
 .main-title {
   color:#F4D80A;
@@ -132,23 +103,54 @@ padding-bottom:500px;
   }
 }
 
+p{
+  font-size: 20px;
+}
+
+h2{
+  font-size: 50px;
+}
+
+
 /*Media scaling changes*/
+
+
+@media (max-width: 1250px){
+  p{
+  font-size: 16px;
+}
+h2{
+  font-size: 35px;
+}
+}
+
+
+
 @media (max-width: 850px) {
   .main-title h1 {
     font-size: 3rem;
   }
+  p{
+  font-size: 14px;
+}
+h2{
+  font-size: 30px;
+}
 }
 @media (max-width: 600px) {
   .main-title h1 {
     font-size: 2rem;
     margin-top:50px;
-   
   }
+   
 }
 @media (max-width: 300px) {
   .main-title h1 {
     margin-top:20px;
   }
+  h2{
+  font-size: 20px;
+}
 }
 @media (max-width: 200px) {
   .main-title h1 {
