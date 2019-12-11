@@ -502,17 +502,20 @@ p {
 
 /*@Media scaling*/
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   p {
     font-size: 20px;
-    margin-top: -180px;
+    margin-top: -130px;
   }
+}
+
+@media (max-width: 850px) {
 }
 
 @media (max-width: 400px) {
   p {
     font-size: 15px;
-    margin-top: -180px;
+   
   }
 }
 
