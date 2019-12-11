@@ -3,7 +3,7 @@
 
       <vue-particles
         class="particle"
-        color="#F4D80A"
+        color="#ffffff"
         :particleOpacity="0.9"
         linesColor="#FFE302"
         :particlesNumber="80"
@@ -50,8 +50,7 @@
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image3"></parallax-element>
+                  <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image3"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Mercury</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
@@ -79,9 +78,9 @@
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image7"></parallax-element>
-                  <parallax-element tag="p" :type="type" :parallaxStrength="20">Venus</parallax-element>
+          
+                  <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image7"></parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="20">Venus</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                 </parallax-container>
@@ -106,9 +105,9 @@
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image11"></parallax-element>
-                  <parallax-element tag="p" :type="type" :parallaxStrength="20">Earth</parallax-element>
+                  
+                  <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image11"></parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="20">Earth</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                 </parallax-container>
@@ -137,9 +136,9 @@
                   <!--  <parallax-element :type="depth" :parallaxStrength="-20" tag="img" :src="image1" class="pimg1"></parallax-element>-->
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image6"></parallax-element>
-                  <parallax-element tag="p" :type="type" :parallaxStrength="20">Mars</parallax-element>
+                
+                  <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image6"></parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="20">Mars</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                 </parallax-container>
@@ -164,9 +163,8 @@
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image13"></parallax-element>
-                  <parallax-element tag="p" :type="type" :parallaxStrength="20">Jupiter</parallax-element>
+                  <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image13"></parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="20">Jupiter</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                 </parallax-container>
@@ -192,9 +190,9 @@
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                 
                   <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image8"></parallax-element>
-                  <parallax-element tag="p" :type="type" :parallaxStrength="20">Saturn</parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="20">Saturn</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                 </parallax-container>
@@ -219,9 +217,9 @@
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
 
-                  <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image9"></parallax-element>
-                  <parallax-element tag="p" :type="type" :parallaxStrength="20">Uranus</parallax-element>
+                  
+                  <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image9"></parallax-element>
+                  <parallax-element tag="p" :type="depth" :parallaxStrength="20">Uranus</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                 </parallax-container>
@@ -247,11 +245,14 @@
                       :animationDuration="duration"
                       :easing="easing"
                     >
-                      <img :src="image1" style="opacity:0;" class="image" alt /><parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2" ></parallax-element>
-                      <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image10"></parallax-element>
-                      <parallax-element tag="p" :type="type" :parallaxStrength="20">Neptune</parallax-element>
+                      <img :src="image1" style="opacity:0;" class="image" alt />
+                     
+                      <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image10"></parallax-element>
+                      <parallax-element tag="p" :type="depth" :parallaxStrength="20">Neptune</parallax-element>
                       <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                      <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element></parallax-container>
+                      <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                      
+                    </parallax-container>
                   </v-col>
                     
                 </v-row>
@@ -279,9 +280,9 @@ When Pluto elliptical orbit takes it closer to the Sun, its surface ice thaws an
                   >
                     <img :src="image1" style="opacity:0;" class="image" alt />
 
-                    <parallax-element :type="depth" :parallaxStrength="10" tag="img" :src="image2"></parallax-element>
+                    
                     <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image12"></parallax-element>
-                    <parallax-element tag="p" :type="type" :parallaxStrength="20">Pluto</parallax-element>
+                    <parallax-element tag="p" :type="depth" :parallaxStrength="20">Pluto</parallax-element>
                     <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
                     <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
                   </parallax-container>
