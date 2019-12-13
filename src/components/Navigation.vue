@@ -4,6 +4,7 @@
       id="navdrawer"
       v-model="drawer"
       app
+      extended
       hide-overlay
       disable-route-watcher
       color="white"
@@ -13,67 +14,46 @@
     >
       <v-list>
         <v-list-item-content>
-          <v-list-item-title class="title">Categories</v-list-item-title>
+          <v-list-item-title class="title"> All Categories</v-list-item-title>
           <v-divider></v-divider>
         </v-list-item-content>
 
         <!-- Learn about space category-->
-        <v-list-group no-action>
-          <template v-slot:activator>
-            <v-list-item-title>Learn about space</v-list-item-title>
-          </template>
+        <router-link to="/planetandmore">
           <v-list-item>
+           
+               <v-icon> mdi-brightness-5 </v-icon>
+             
             <v-list-item-content>
-              <router-link to="/planet">
-                <v-list-item-title>Planets</v-list-item-title>
-              </router-link>
-              <router-link to="/star">
-                <v-list-item-title>Stars</v-list-item-title>
-              </router-link>
-              <router-link to="/sun">
-                <v-list-item-title>The Sun</v-list-item-title>
-              </router-link>
+                <v-list-item-title>Outer Space</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list-group>
+        </router-link>
 
         <!-- This quaters theme: rockets! category-->
-        <v-list-group no-action>
-          <template v-slot:activator>
-            <v-list-item-title>This quarters theme: Rockets</v-list-item-title>
-          </template>
+        <router-link to="/rocketandmore">
           <v-list-item>
+           
+               <v-icon> mdi-rocket</v-icon>
+          
             <v-list-item-content>
-              <router-link to="/rocket">
-                <v-list-item-title>All about rockets</v-list-item-title>
-              </router-link>
-              </v-list-item-content>
-              <router-link to="/astronaut">
-                <v-list-item-title>Astronauts</v-list-item-title>
-              </router-link>
-            
-          </v-list-item>
-        </v-list-group>
-
-        <!-- Event and fun stuff category-->
-        <v-list-group no-action>
-          <template v-slot:activator>
-            <v-list-item-title>Events and games</v-list-item-title>
-          </template>
-          <v-list-item>
-            <v-list-item-content>
-              <router-link to="/event">
-                <v-list-item-title>Events</v-list-item-title>
-              </router-link>
-              <router-link to="/games">
-                <v-list-item-title>Games</v-list-item-title>
-              </router-link>
-              <router-link to="/drawing">
-                <v-list-item-title>Drawing contests</v-list-item-title>
-              </router-link>
+                <v-list-item-title>This quarters them: Rockets!</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list-group>
+      </router-link>
+
+        <!-- Event and fun stuff category-->
+   <router-link to="/gamesandmore">
+          <v-list-item>
+         
+               <v-icon> mdi-space-invaders </v-icon>
+           
+            <v-list-item-content>
+                <v-list-item-title >Fun stuff!</v-list-item-title>
+             
+            </v-list-item-content>
+          </v-list-item>
+      </router-link>
       </v-list>
     </v-navigation-drawer>
 
@@ -83,35 +63,32 @@
         <v-img v-bind="props" gradient="to top right, #000000, #434343"></v-img>
       </template>
       <v-app-bar-nav-icon id="navicon" @click.stop="drawer = !drawer" />
-      <router-link to="/">
+     
         <div>
-          <img src="../assets/rocket.png" id="logo" />
+           <router-link to="/"><img src="../assets/rocket.png" id="logo" /> </router-link>
         </div>
-      </router-link>
+     
       <v-spacer></v-spacer>
+     <v-spacer></v-spacer>
       <v-toolbar-items id="headernav">
         <!--Learn about space-->
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
-            <v-btn color="transparent" class="navtext" dark v-on="on" depressed><normal>Learn about space</normal></v-btn>
+            <v-btn color="transparent" class="navtext" dark v-on="on" depressed>  
+              <router-link to="/planetandmore">Outer Space</router-link>
+              </v-btn>
           </template>
 
           <v-list>
             <router-link to="/planet">
             <v-list-item>
-              <v-list-item-title>Planets</v-list-item-title>
-            </v-list-item>
-            </router-link>
-
-            <router-link to="/star">
-            <v-list-item>
-              <v-list-item-title>Stars</v-list-item-title>
+              <v-list-item-title>Our Solar System</v-list-item-title>
             </v-list-item>
             </router-link>
             
-            <router-link to="/sun">
+            <router-link to="/spacefact">
             <v-list-item>
-              <v-list-item-title>Sun</v-list-item-title>
+              <v-list-item-title>Space facts!</v-list-item-title>
             </v-list-item>
             </router-link>
           </v-list>
@@ -122,10 +99,7 @@
         <v-menu open-on-hover offset-y>
           
           <template v-slot:activator="{ on }">
-            <v-btn color="transparent" dark v-on="on" depressed>This quarters theme: Rockets!
-             
-   
-
+            <v-btn color="transparent" dark v-on="on" depressed> <router-link to="/rocketandmore">This quarters theme: Rockets!</router-link>
             </v-btn>
           </template>
         
@@ -146,7 +120,7 @@
         <!-- Events and fun stuff-->
         <v-menu offset-y z-index="999999999" open-on-hover>
           <template v-slot:activator="{ on }">
-            <v-btn color="transparent" dark v-on="on" depressed>Games and events</v-btn>
+            <v-btn color="transparent" dark v-on="on" depressed><router-link to="gamesandmore">Fun stuff!</router-link></v-btn>
           </template>
           <v-list>
             <router-link to="/games">
@@ -169,25 +143,38 @@
       </v-toolbar-items>
       <template>
         <!--search bar-->
-        <Searchbar></Searchbar>
+        <v-spacer></v-spacer>
+      <v-text-field
+       id="search" 
+        hide-details
+        prepend-inner-icon="search"
+        single-line
+        dense
+        reverse
+        flat
+        autofocus
+      ></v-text-field>
         <!--login page-->
         <Login></Login>
       </template>
+
+
+ 
     </v-app-bar>
+  
   </v-card>
+  
 </template>
 
 
 
 
 <script>
-import Searchbar from "../assets/Searchbar";
 import Login from "./Login";
 
 export default {
   name: "App",
   components: {
-    Searchbar,
     Login
   },
   props: {
@@ -201,6 +188,9 @@ export default {
 
 
 <style lang="scss">
+#search{
+  width:1px;
+}
 #login {
   z-index: 9999;
 }

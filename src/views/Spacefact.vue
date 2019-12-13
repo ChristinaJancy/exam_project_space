@@ -1,18 +1,12 @@
 <template>
-<v-content>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    id="e99ru1i5lrfb1"
-    shape-rendering="geometricPrecision"
-    text-rendering="geometricPrecision"
-    viewBox="0 0 595.3 841.9"
-  >
-  <svg viewbox="0 0 700 800">
+<v-col cols="auto" class="mx-auto my-auto">
+    <v-row>
+        <svg viewbox="0 0 700 800">
     <clipPath id="textClip" class="filled-heading">
      
-        <text y="70">L e a r n</text>
-        <text y="140">All about</text>
-        <text y="210">R o c k e t s</text>
+        <text y="70">Space</text>
+        <text y="140">categories</text>
+        
     </clipPath>
     
     <g id="background" clip-path="url(#textClip)">
@@ -73,236 +67,78 @@
         <path d="m250.61 235.97c27.616-5.1225 37.462-46.601 20.403-76.147-17.058-29.546-62.902-27.232-75.178-20.144-12.277 7.088-23.943 56.565-17.942 66.959 6.0012 10.394 24.596 38.253 72.717 29.332z" stroke-width=".22275"/>
     </g>
 </svg>
-    <defs />
+        <v-col>
+  <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="https://image.posterlounge.com/img/products/650000/641972/641972_poster_l.jpg"
+      height="200px"
+    ></v-img>
 
-    <g
-      transform="translate(216.527 477.675)"
-      style="animation:e99ru1i5lrfb2_to__to 3000ms linear 1 normal forwards"
-    >
-      <g id="e99ru1i5lrfb2" transform="rotate(.935) scale(.62112 .65879)">
-        <g
-          id="e99ru1i5lrfb3"
-          stroke="none"
-          stroke-width="1"
-          transform="translate(-172.258 61.419)"
-        >
-          <path
-            id="e99ru1i5lrfb4"
-            fill="#EF3732"
-            d="M227.6 397.6h40.2c-5-12.7-8.7-28.6-10.8-46.4-17.8 10.4-29.4 27.3-29.4 46.4z"
-          />
-          <path
-            id="e99ru1i5lrfb5"
-            fill="#CF302A"
-            d="M338.2 351.2c-2 17.8-5.8 33.7-10.8 46.4h40.2c.1-19.1-11.6-36-29.4-46.4z"
-          />
-          <path
-            id="e99ru1i5lrfb6"
-            fill="#F8993F"
-            d="M275.2 429.1c0-5.1.4-10 1.1-14.6h-5.2c-.9 5.5-1.4 11.4-1.4 17.5 0 31.2 27.9 56.6 27.9 56.6V476s-22.4-21-22.4-46.9z"
-          />
-          <path
-            id="e99ru1i5lrfb7"
-            fill="#D78637"
-            d="M320.1 429.1c0 25.9-22.4 46.8-22.4 46.8v12.7s27.9-25.3 27.9-56.6c0-6.1-.5-12-1.4-17.5H319c.7 4.6 1.1 9.5 1.1 14.6z"
-          />
-          <path
-            id="e99ru1i5lrfb8"
-            fill="#DDB034"
-            d="M297.6 476s22.4-21 22.4-46.8c0-5.1-.4-10-1.1-14.6h-21.3V476z"
-            transform="translate(.002 .318)"
-          />
-          <path
-            id="e99ru1i5lrfb9"
-            fill="#FFC93B"
-            d="M276.3 414.5c-.7 4.6-1.1 9.5-1.1 14.6 0 25.9 22.4 46.8 22.4 46.8v-61.5h-21.3z"
-          />
-          <path
-            id="e99ru1i5lrfb10"
-            fill="#B7B9BC"
-            d="M297.6 340.7v-18.6c-11.3 0-20.4-9.2-20.4-20.4 0-11.3 9.2-20.4 20.4-20.4v-34.7h-23.1c-9.9 19.4-19.3 45.2-19.3 73.6 0 10.8.6 21.3 1.8 31.1 11.5-6.7 25.5-10.6 40.6-10.6z"
-          />
-          <path
-            id="e99ru1i5lrfb11"
-            fill="#9FA2A5"
-            d="M297.6 281.2c11.3 0 20.4 9.2 20.4 20.4 0 11.3-9.2 20.4-20.4 20.4v18.6c15.1 0 29.1 3.9 40.6 10.6 1.1-9.9 1.8-20.3 1.8-31.1 0-28.3-9.4-54.2-19.3-73.6h-23.1v34.7z"
-          />
-          <path
-            id="e99ru1i5lrfb12"
-            fill="#B7B9BC"
-            d="M297.6 340.7v57h-29.8c-5-12.7-8.7-28.6-10.8-46.4 5.7-3.3 12.1-6 18.9-7.8 6.9-1.8 14.2-2.8 21.7-2.8z"
-          />
-          <path
-            id="e99ru1i5lrfb13"
-            fill="#9FA2A5"
-            d="M338.2 351.2c-2.1 17.8-5.8 33.7-10.8 46.4h-29.8v-57c15.2.1 29.2 4 40.6 10.6z"
-          />
-          <path
-            id="e99ru1i5lrfb14"
-            fill="#EF3732"
-            d="M297.6 210.9s-11.9 13.7-23.1 35.6h23.1v-35.6z"
-          />
-          <path
-            id="e99ru1i5lrfb15"
-            fill="#CF302A"
-            d="M320.7 246.5c-11.2-21.9-23.1-35.6-23.1-35.6v35.6h23.1z"
-          />
-          <path
-            id="e99ru1i5lrfb16"
-            fill="#201F21"
-            d="M279.4 301.6c0-10.1 8.1-18.2 18.2-18.2v-2.2c-11.3 0-20.4 9.2-20.4 20.4 0 11.3 9.2 20.4 20.4 20.4v-2.2c-10 0-18.2-8.1-18.2-18.2z"
-          />
-          <path
-            id="e99ru1i5lrfb17"
-            fill="#000"
-            d="M318.1 301.6c0-11.3-9.2-20.4-20.4-20.4v2.2c10.1 0 18.2 8.1 18.2 18.2s-8.1 18.2-18.2 18.2v2.2c11.2.1 20.4-9.1 20.4-20.4z"
-          />
-          <path
-            id="e99ru1i5lrfb18"
-            fill="#CF302A"
-            d="M315.8 301.6c0-10.1-8.1-18.2-18.2-18.2v36.4c10.1 0 18.2-8.1 18.2-18.2z"
-          />
-          <path
-            id="e99ru1i5lrfb19"
-            fill="#EF3732"
-            d="M279.4 301.6c0 10.1 8.1 18.2 18.2 18.2v-36.4c-10 0-18.2 8.2-18.2 18.2z"
-          />
-          <rect
-            id="e99ru1i5lrfb20"
-            width="27.9"
-            height="16.9"
-            fill="#EF3732"
-            rx="0"
-            ry="0"
-            transform="translate(269.7 397.6)"
-          />
-          <rect
-            id="e99ru1i5lrfb21"
-            width="27.9"
-            height="16.9"
-            fill="#CF302A"
-            rx="0"
-            ry="0"
-            transform="translate(297.6 397.6)"
-          />
-        </g>
-      </g>
-    </g>
-  </svg>
+    <v-card-title>
+    Our Solarsystem
+    </v-card-title>
 
-<v-parallax src="../assets/rocket/home_electron_bg.png" class="mx-auto my-auto" style="text-align:center;">
-    <h2 style="color:white;">Rocket Diagram</h2>
-</v-parallax>
+    <v-card-subtitle>
+    All about the Sun and the planets in our solar system. 
+    </v-card-subtitle>
 
-<v-col>
-<v-row>
-    <v-col cols="auto" class="mx-auto my-auto">
-        <p style="color:white;">Here you see a diagram of the U.S Shuttle</p>
-    </v-col>
+    <v-card-actions>
 
-    <v-col cols="auto" class="mx-auto my-auto">
-<v-img src="../assets/rocket/rocketdiagram.jpg"></v-img>
-    </v-col>
-</v-row>
+<v-spacer></v-spacer>
+      <router-link to="/planet">
+      <v-btn
+        color="purple"
+        text
+      >
+        Explore
+      </v-btn>
+      </router-link>
+      <v-spacer></v-spacer>
+
+    </v-card-actions>
+
+
+  </v-card>
+        </v-col>
+        <v-col>
+              <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="https://image.sciencenordic.com/1445856.jpg?imageId=1445856&width=480&height=274"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+    Space Facts!
+    </v-card-title>
+
+    <v-card-subtitle>
+    Want to know more about space?  - Then you have come to the right place!
+    </v-card-subtitle>
+
+    <v-card-actions>
+
+<v-spacer></v-spacer>
+      <v-btn
+        color="purple"
+        text
+      >
+        Explore
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+    </v-card-actions>
+
+
+  </v-card>
+        </v-col>
+    </v-row>
 </v-col>
-
-<v-parallax src="../assets/rocket/home_electron_bg.png" class="mx-auto my-auto" style="text-align:center;">
-    <h2>About Rockets</h2>
-</v-parallax>
-
-
-  <v-col cols="auto" class="mx-auto my-auto">
-<v-row>
-  <v-col> <p style="color:white;" class="display-3">Did you know?</p> </v-col>
-</v-row>
-<v-row> 
-    <v-col> <p style="color:white;">A trip to the moon, isn't like any other trips. First and foremost a trip like that requires a specific form for transportation, rockets. Space rockets are designed to travel in an extremely high speed, releasing some of its weight load behind as it accelerates towards space. The gravity down on earth is greater than up in space, which is why you see a massive fire frames burning out giving the rocket enough pressure to outwork the gravity. The weight load that is being thrown off the rocket are the empty gas tanks, that the rocket no longer needs, and by releasing them off, the rocket gets lighter and allows it to finish the trip to space. In fact rockets works more efficiently in space than in the atmosphere. 
-</p> 
-</v-col>
-</v-row>
-
-  </v-col>
-
-
-</v-content>
 </template>
 
- <style>
-@keyframes e99ru1i5lrfb2_to__to {
-  0% {
-    transform: translate(216.526602px, 477.675057px);
-  }
-  6.666667% {
-    transform: translate(216.526602px, 466.241557px);
-  }
-  13.333333% {
-    transform: translate(224.093869px, 417.38933px);
-  }
-  20% {
-    transform: translate(224.093869px, 396.143237px);
-  }
-  26.666667% {
-    transform: translate(224.093869px, 357.900268px);
-  }
-  33.333333% {
-    transform: translate(224.093869px, 304.785034px);
-  }
-  40% {
-    transform: translate(224.093869px, 258.043628px);
-  }
-  46.666667% {
-    transform: translate(224.093869px, 148.875432px);
-  }
-  53.333333% {
-    transform: translate(224.093869px, 96.822502px);
-  }
-  60% {
-    transform: translate(224.093869px, 33.084221px);
-  }
-  66.666667% {
-    transform: translate(224.093869px, -43.401717px);
-  }
-  73.333333% {
-    transform: translate(224.093869px, -112.451521px);
-  }
-  80% {
-    transform: translate(224.093869px, -129.448396px);
-  }
-  86.666667%,
-  to {
-    transform: translate(224.093869px, -170.878279px);
-  }
-}
-
-h2{
-    font-size: 2rem;
-    font-family: "Press Start 2P", cursive;
-}
-/*Text */
-/* Basic styling */
-svg {
-    width: 100%;
-}
-.filled-heading {
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 5em;
-    line-height: 0.9;
-}
-
-/* Animate the background shapes */
-#background path {
-    animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
-    /* Necessary to keep the SVG objects in place while scaling */
-    animation-iteration-count: 0.5;
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
-}
-
-@keyframes pulse {
-    /* Rotating it along with the scale makes it a little bit more fancy */
-    0%, 100% { transform: scale(0) rotate(33deg); }
-    35%, 65% { transform: scale(1) rotate(0deg); }
-
-} 
-</style>

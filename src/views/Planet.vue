@@ -22,6 +22,8 @@
  
 
       <v-card color="transparent" class="mx-auto" max-width="700" flat>
+
+        
         <v-card-title id="pheader">Our Solar System</v-card-title>
         <v-spacer></v-spacer>
 
@@ -30,6 +32,7 @@
 
       <!-- All planets begins here-->
       <div class="container">
+        
         <v-row justify="center">
           <v-col cols="auto" class="mx-auto py-0">
 
@@ -51,11 +54,13 @@
                   
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
+                  
                   <parallax-element :type="depth" :parallaxStrength="5" tag="img" :src="image14"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="10">The Sun</parallax-element>
                   
                  
                 </parallax-container>
+                
               </v-col>
            
             </v-row>
@@ -526,6 +531,7 @@ p {
     margin-top: -230px;
   }
 }
+
 </style>
   
 
