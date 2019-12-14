@@ -34,11 +34,11 @@
       <div class="container">
         
         <v-row justify="center">
-          <v-col cols="auto" class="mx-auto py-0">
+          <v-col class="mx-auto py-0">
 
 
             <v-row>
-               <v-col class="mx-auto my-auto">
+               <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About the Sun</v-expansion-panel-header>
@@ -46,17 +46,15 @@
                       </v-expansion-panel>
                     </v-expansion-panels>
              </v-col>
-              <v-col cols="auto" class="mx-auto">
+              <v-col cols="auto"  class="mx-auto my-auto">
                 <parallax-container
                   class="image-container"
                   :animationDuration="duration"
                   :easing="easing"
-                  
                 >
                   <img :src="image1" style="opacity:0;" class="image" alt />
-                  
-                  <parallax-element :type="depth" :parallaxStrength="5" tag="img" :src="image14"></parallax-element>
-                  <parallax-element tag="p" :type="depth" :parallaxStrength="10">The Sun</parallax-element>
+                  <parallax-element :type="rotate" :parallaxStrength="5" tag="img" id="sun" :src="image14"></parallax-element>
+                  <parallax-element tag="p" :type="rotate" :parallaxStrength="10">The Sun</parallax-element>
                   
                  
                 </parallax-container>
@@ -67,7 +65,7 @@
 
             <!--planet Mercury-->
             <v-row>
-               <v-col class="mx-auto my-auto">
+               <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Mercury</v-expansion-panel-header>
@@ -86,7 +84,7 @@
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image3"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Mercury</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                  
                 </parallax-container>
               </v-col>
            
@@ -94,7 +92,7 @@
 
             <!-- Planet Venus-->
             <v-row>
-            <v-col class="mx-auto my-auto">
+            <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Venus</v-expansion-panel-header>
@@ -115,14 +113,14 @@
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image7"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Venus</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                  
                 </parallax-container>
               </v-col>
             </v-row>
 
             <!-- Planet Earth-->
             <v-row>
-              <v-col class="mx-auto my-auto">
+              <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About The Earth</v-expansion-panel-header>
@@ -142,7 +140,7 @@
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image11"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Earth</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                  
                 </parallax-container>
               </v-col>
             
@@ -151,7 +149,7 @@
             <!-- Planet Mars-->
 
             <v-row>
-           <v-col class="mx-auto my-auto">
+           <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Mars</v-expansion-panel-header>
@@ -173,14 +171,14 @@
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image6"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Mars</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                 
                 </parallax-container>
               </v-col>
             </v-row>
 
             <!-- Planet Jupiter-->
             <v-row>
-              <v-col class="mx-auto my-auto">
+              <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Jupiter</v-expansion-panel-header>
@@ -199,7 +197,7 @@
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image13"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Jupiter</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                
                 </parallax-container>
               </v-col>
           
@@ -207,7 +205,7 @@
 
             <!-- Planet Saturn-->
             <v-row>
-            <v-col class="mx-auto my-auto">
+            <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Saturn</v-expansion-panel-header>
@@ -227,14 +225,14 @@
                   <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image8"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Saturn</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                 
                 </parallax-container>
               </v-col>
             </v-row>
 
             <!-- Planet Uranus-->
             <v-row>
-              <v-col class="mx-auto my-auto">
+              <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Uranus</v-expansion-panel-header>
@@ -254,7 +252,7 @@
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image9"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Uranus</parallax-element>
                   <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                 
                 </parallax-container>
               </v-col>
                 
@@ -264,7 +262,7 @@
            
               <v-card color="transparent" flat class="my-auto">
                 <v-row>
-                  <v-col class="mx-auto my-auto">
+                  <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Neptune</v-expansion-panel-header>
@@ -283,7 +281,7 @@
                       <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image10"></parallax-element>
                       <parallax-element tag="p" :type="depth" :parallaxStrength="20">Neptune</parallax-element>
                       <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                      <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                     
                       
                     </parallax-container>
                   </v-col>
@@ -295,7 +293,7 @@
             <!-- Planet Pluto-->
             <v-card color="transparent" flat class="planetcard my-auto">
               <v-row>
-                <v-col class="mx-auto my-auto">
+                <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
                         <v-expansion-panel-header class="planetpaneltext">About Pluto</v-expansion-panel-header>
@@ -317,7 +315,7 @@ When Pluto elliptical orbit takes it closer to the Sun, its surface ice thaws an
                     <parallax-element :type="depth" :parallaxStrength="25" tag="img" :src="image12"></parallax-element>
                     <parallax-element tag="p" :type="depth" :parallaxStrength="20">Pluto</parallax-element>
                     <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
-                    <parallax-element :type="depth" :parallaxStrength="15" tag="img" :src="image5"></parallax-element>
+                   
                   </parallax-container>
                 </v-col>
              
@@ -434,6 +432,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 img {
   position: absolute;
   top: 0;
@@ -444,6 +443,7 @@ img {
     position: relative;
   }
 }
+
 
 @media only screen and (max-width: 670px) {
   img {
@@ -457,6 +457,7 @@ img {
       position: relative;
     }
   }
+
 }
 
 .image-container {

@@ -151,7 +151,7 @@ svg {
 }
 .filled-heading {
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+font-family: 'Audiowide', cursive;
   font-size: 5rem;
   line-height: 0.9;
 }

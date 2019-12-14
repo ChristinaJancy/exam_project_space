@@ -102,7 +102,6 @@
             <v-btn color="transparent" dark v-on="on" depressed> <router-link to="/rocketandmore">This quarters theme: Rockets!</router-link>
             </v-btn>
           </template>
-        
           <v-list>
              <router-link to="/rocket">
             <v-list-item>
