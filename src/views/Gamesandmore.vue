@@ -1,7 +1,7 @@
 <template>
-  <v-content class="mx-auto">
+  <v-content>
    
-      <svg viewBox="0 0 700 225">
+      <svg viewBox="-180 0 700 150">
         <clipPath id="textClip" class="filled-heading">
           <text y="70">Fun Stuff</text>
           <text y="140">Categories</text>
@@ -173,7 +173,7 @@ svg {
 .filled-heading {
   text-transform: uppercase;
 font-family: 'Audiowide', cursive;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 0.9;
 }
 

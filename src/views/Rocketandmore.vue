@@ -1,7 +1,7 @@
 <template>
   <v-content class="mx-auto">
    
-      <svg viewBox="0 0 700 220">
+      <svg viewBox="-65 0 700 150">
         <clipPath id="textClip" class="filled-heading">
           <text y="70">Theme:Rocket</text>
           <text y="140">Categories</text>
