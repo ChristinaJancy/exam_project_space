@@ -3,7 +3,7 @@
    
       <svg viewBox="0 0 700 225">
         <clipPath id="textClip" class="filled-heading">
-          <text y="70">Rocket theme</text>
+          <text y="70">Theme:Rocket</text>
           <text y="140">Categories</text>
         </clipPath>
 
