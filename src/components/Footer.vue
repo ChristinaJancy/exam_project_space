@@ -51,13 +51,6 @@
                   <br />Career at Safe Space
                 </v-card-subtitle>
               </v-col>
-
-              <v-col cols="12" md="6" sm="12" class="mx-auto">
-                <v-card-title></v-card-title>
-                <v-card-subtitle class="font-weight-bold white--text">
-                 
-                </v-card-subtitle>
-              </v-col>
             </v-row>
           </v-container>
           
