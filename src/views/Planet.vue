@@ -139,7 +139,7 @@
                   
                   <parallax-element :type="depth" :parallaxStrength="20" tag="img" :src="image11"></parallax-element>
                   <parallax-element tag="p" :type="depth" :parallaxStrength="20">Earth</parallax-element>
-                  <parallax-element :type="depth" :parallaxStrength="30" tag="img" :src="image4"></parallax-element>
+                 
                   
                 </parallax-container>
               </v-col>
@@ -380,7 +380,7 @@ import image7 from "@/assets/solarsystem/venus.png";
 import image8 from "@/assets/solarsystem/saturn.png";
 import image9 from "@/assets/solarsystem/uranus.png";
 import image10 from "@/assets/solarsystem/neptune.png";
-import image11 from "@/assets/solarsystem/earth.png";
+import image11 from "@/assets/solarsystem/earth2.png";
 import image12 from "@/assets/solarsystem/pluto.png";
 import image13 from "@/assets/solarsystem/jupiter.png";
 import image14 from "@/assets/solarsystem/sun.png";

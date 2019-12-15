@@ -40,7 +40,7 @@
           <v-container  white--text>
             
             <v-row  no-gutters dense>
-              <v-col cols="12" md="6" sm="12" class="mx-auto">
+              <v-col cols="12" md="12" sm="12" class="mx-auto">
                 <v-card-title>Safe Space</v-card-title>
                 <v-card-subtitle class="font-weight-bold white--text">
                   <router-link to="/parentinfo">Info for Parents and caretakers</router-link>

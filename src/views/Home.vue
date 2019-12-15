@@ -2,20 +2,15 @@
   <v-content>
     <!-- Parallax begins (no framework) -->
 <v-col cols="auto" class="mx-auto">
-  <v-row class="mx-auto" justify="center">
+  <v-row class="mx-auto my-auto" justify="center">
         <div class="main-title">
           <h1 absolute>Safe Space</h1>
         </div>
 
 
-   
       <v-col
           cols="auto"
-          class="text-center"
-          style="margin-top:200x;"
         >
-        
-      
       <v-img
           max-width="400"
           max-height="400"
@@ -89,7 +84,7 @@ export default {
 
 
 .main-title {
-  color:#F4D80A;
+  color:rgb(255, 226, 38);
   z-index: 1;
   position: absolute;
   text-align: center;
