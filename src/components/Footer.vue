@@ -37,25 +37,25 @@
         <!-- Footer Info box-->
         <div>
            <Solarsystem></Solarsystem>
-          <v-container align in alignments white--text>
+          <v-container  white--text>
             
-            <v-row :align="align" no-gutters dense>
-              <v-col cols="12" md="6" sm="12">
-                <v-card-title>Help</v-card-title>
+            <v-row  no-gutters dense>
+              <v-col cols="12" md="6" sm="12" class="mx-auto">
+                <v-card-title>Safe Space</v-card-title>
                 <v-card-subtitle class="font-weight-bold white--text">
-                  Info for Parents, Teachers and Caregivers
+                  <router-link to="/parentinfo">Info for Parents and caretakers</router-link>
                   <br />FAQ
-                  <br />
-                </v-card-subtitle>
-              </v-col>
-
-              <v-col cols="12" md="6" sm="12">
-                <v-card-title>About Safe Space</v-card-title>
-                <v-card-subtitle class="font-weight-bold white--text">
-                  Organization
+                  <br />Organization
                   <br />Where to find us
                   <br />Contact Us
                   <br />Career at Safe Space
+                </v-card-subtitle>
+              </v-col>
+
+              <v-col cols="12" md="6" sm="12" class="mx-auto">
+                <v-card-title></v-card-title>
+                <v-card-subtitle class="font-weight-bold white--text">
+                 
                 </v-card-subtitle>
               </v-col>
             </v-row>

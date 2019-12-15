@@ -13,6 +13,7 @@ import Register from './components/Register.vue'
 import Planetandmore from './views/Planetandmore.vue'
 import Rocketandmore from './views/Rocketandmore.vue'
 import Gamesandmore from './views/Gamesandmore.vue'
+import Parentinfo from './views/Parentinfo.vue'
 
 Vue.use(Router, VueMouseParallax)
 
@@ -81,6 +82,11 @@ export default new Router({
       name: 'gamesandmore',
       component: Gamesandmore
     },   
+    {
+      path: '/parentinfo',
+      name: 'parentinfo',
+      component: Parentinfo
+    },  
   ]
 })
 
