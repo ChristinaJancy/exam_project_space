@@ -64,25 +64,24 @@
         </div>
       </router-link>
 
-      <v-toolbar-title> Safe Space </v-toolbar-title>
-      <v-spacer></v-spacer>
+     
+   <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-toolbar-items id="headernav">
         <!--Learn about space-->
-        <v-menu offset-y open-on-hover>
+        
+        <v-menu open-on-hover offset-y >
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" class="navtext" dark v-on="on" depressed>
-              <router-link to="/planetandmore">Outer Space</router-link>
+              <router-link to="/planetandmore"><p class="my-auto">The Outer Space</p></router-link>
             </v-btn>
           </template>
-
           <v-list>
             <router-link to="/planet">
               <v-list-item>
                 <v-list-item-title>Our Solar System</v-list-item-title>
               </v-list-item>
             </router-link>
-
             <router-link to="/spacefact">
               <v-list-item>
                 <v-list-item-title>Space facts!</v-list-item-title>
@@ -96,7 +95,7 @@
         <v-menu open-on-hover offset-y>
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" dark v-on="on" depressed>
-              <router-link to="/rocketandmore">This quarters theme: Rockets!</router-link>
+              <router-link to="/rocketandmore"><p class="my-auto">This quarters theme: Rockets!</p></router-link>
             </v-btn>
           </template>
           <v-list>
@@ -117,7 +116,7 @@
         <v-menu offset-y z-index="999999999" open-on-hover>
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" dark v-on="on" depressed>
-              <router-link to="gamesandmore">Fun stuff!</router-link>
+              <router-link to="gamesandmore"><p class="my-auto">All the fun stuff!</p></router-link>
             </v-btn>
           </template>
           <v-list>
@@ -192,9 +191,10 @@ export default {
   z-index: 9999;
 }
 
-#navtext {
-  color: #e23e57;
+p {
+  color: #bf7e6a;
 }
+
 #navdrawer {
   display: none;
   z-index: 99999999999999999999999999;

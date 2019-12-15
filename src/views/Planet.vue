@@ -467,7 +467,7 @@ img {
 
 p {
   position: absolute;
-  color: rgb(255, 145, 0);
+  color: #bf7e6a;
   text-shadow: 4px 8px #000000;
   top: 60%;
   font-size: 40px;

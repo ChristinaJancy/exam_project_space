@@ -6,7 +6,7 @@
         height="400"
         gradient="to top right, rgba(120,56,70,.3), rgba(00,00,00,.7)"
       >
-        <v-card-title class="white--text">
+        <v-card-title class="white--text mx-auto my-auto">
           <v-spacer></v-spacer>
 
           <a href="https://facebook.com">
@@ -37,21 +37,30 @@
         <!-- Footer Info box-->
         <div>
            <Solarsystem></Solarsystem>
-          <v-container  white--text>
-            
-            <v-row  no-gutters dense>
-              <v-col cols="12" md="12" sm="12" class="mx-auto">
-                <v-card-title>Safe Space</v-card-title>
+          <v-container white--text>
+            <v-col>
+            <v-row justify="space-between" justify-md="space-between" justify-sm="center">
+              <v-col cols="auto">
+                
+                <v-card-title class="title">Help and info</v-card-title>
+               
                 <v-card-subtitle class="font-weight-bold white--text">
-                  <router-link to="/parentinfo">Info for Parents and caretakers</router-link>
-                  <br />FAQ
-                  <br />Organization
-                  <br />Where to find us
-                  <br />Contact Us
-                  <br />Career at Safe Space
+                  <router-link to="/parentinfo"><p class="my-auto">Info for Parents and caretakers</p></router-link>
+                  <p class="my-auto">FAQ</p>
+                  <p class="my-auto">Organization</p>
+                  <p class="my-auto">Where to find us</p>
+                  <p class="my-auto">Career at Safe Space</p>
                 </v-card-subtitle>
               </v-col>
+               <v-col cols="auto">
+                 <v-card-title class="title">Contact us</v-card-title>
+                <v-card-subtitle class="font-weight-bold white--text">
+                  <p class="my-auto">+45 12 34 56 78</p>
+                 <p class="my-auto">customerservice@safespace.com</p>
+                </v-card-subtitle>
+               </v-col>
             </v-row>
+            </v-col>
           </v-container>
           
         </div>
