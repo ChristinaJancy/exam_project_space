@@ -42,18 +42,22 @@
             <v-row dense no-gutters justify="space-between" justify-md="space-between" justify-sm="center">
               <v-col cols="auto">
                 
-                <v-card-title class="title">Help and info</v-card-title>
+                <v-card-title class="subtitle-1">Help and info</v-card-title>
                
-                <v-card-subtitle class="font-weight-bold white--text">
-                  <router-link to="/parentinfo"><p class="my-auto">Info for Parents and caretakers</p></router-link>
-                   <router-link to="/faq"><p class="my-auto">FAQ</p></router-link>
+                <v-card-subtitle class="subtitle-2  white--text">
+                  <router-link to="/parentinfo"><p style="color:white;" class="my-auto">Info for Parents and caretakers</p></router-link>
+                   <router-link to="/faq"><p style="color:white;" class="my-auto">FAQ</p></router-link>
                 </v-card-subtitle>
               </v-col>
                <v-col cols="auto">
-                 <v-card-title class="title">Contact us and location</v-card-title>
-                <v-card-subtitle class="font-weight-bold white--text">
-                  <p class="my-auto">+45 12 34 56 78</p>
-                 <p class="my-auto">customerservice@safespace.com</p>
+                 <v-card-title class="subtitle-1">Contact us and location</v-card-title>
+                <v-card-subtitle class="subtitle-2 white--text">
+                <p class="my-auto">+45 12 34 56 78</p>
+                <p class="my-auto">customerservice@safespace.com</p>
+                <br>
+                <p class="my-auto">Spangsbjerg Kirkevej 103
+                  <br>6700 Esbjerg DK
+                </p>
                 </v-card-subtitle>
                </v-col>
             </v-row>
@@ -87,6 +91,14 @@ export default {
  
 </script>
 
+<style scoped>
+@media (max-width:400px){
+  p {
+  font-size: 10px;
+}
+}
+
+</style>
 
 
 <style lang="scss">
@@ -114,4 +126,5 @@ a:hover,
 a:visited {
   text-decoration: none;
 }
+
 </style>
