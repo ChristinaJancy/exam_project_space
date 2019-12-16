@@ -2,7 +2,7 @@
 <v-content id="app">
 
 
-        <h2 style="text-align:center; color:white;">The Outer Space</h2>
+        <h2 style="text-align:center; color:white;">Space Facts</h2>
         <v-img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-523367172-1568809023.jpg"></v-img>
    <v-parallax
       src="../assets/rocket/home_electron_bg.png"
