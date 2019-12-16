@@ -39,7 +39,7 @@
            <Solarsystem></Solarsystem>
           <v-container white--text>
             <v-col>
-            <v-row justify="space-between" justify-md="space-between" justify-sm="center">
+            <v-row dense no-gutters justify="space-between" justify-md="space-between" justify-sm="center">
               <v-col cols="auto">
                 
                 <v-card-title class="title">Help and info</v-card-title>
