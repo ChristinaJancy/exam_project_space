@@ -73,7 +73,7 @@
         <v-menu open-on-hover offset-y >
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" class="navtext" dark v-on="on" depressed>
-              <router-link to="/planetandmore"><p class="my-auto">The Outer Space</p></router-link>
+              <router-link to="/planetandmore"><p id="p" class="my-auto">The Outer Space</p></router-link>
             </v-btn>
           </template>
           <v-list>
@@ -95,7 +95,7 @@
         <v-menu open-on-hover offset-y>
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" dark v-on="on" depressed>
-              <router-link to="/rocketandmore"><p class="my-auto">This quarters theme: Rockets!</p></router-link>
+              <router-link to="/rocketandmore"><p id="p" class="my-auto">This quarters theme: Rockets!</p></router-link>
             </v-btn>
           </template>
           <v-list>
@@ -116,7 +116,7 @@
         <v-menu offset-y z-index="999999999" open-on-hover>
           <template v-slot:activator="{ on }">
             <v-btn color="transparent" dark v-on="on" depressed>
-              <router-link to="gamesandmore"><p class="my-auto">All the fun stuff!</p></router-link>
+              <router-link to="gamesandmore"><p id="p" class="my-auto">All the fun stuff!</p></router-link>
             </v-btn>
           </template>
           <v-list>
@@ -191,7 +191,7 @@ export default {
   z-index: 9999;
 }
 
-p {
+#p{
   color: #bf7e6a;
 }
 
