@@ -642,7 +642,7 @@
       class="mx-auto my-auto"
       style="text-align:center;"
     >
-      <h2>About the event</h2>
+      <h2>About rockets</h2>
     </v-parallax>
 
     <v-col cols="auto" class="mx-auto my-auto">
