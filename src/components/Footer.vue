@@ -46,7 +46,7 @@
                
                 <v-card-subtitle class="font-weight-bold white--text">
                   <router-link to="/parentinfo"><p class="my-auto">Info for Parents and caretakers</p></router-link>
-                  <p class="my-auto">FAQ</p>
+                   <router-link to="/faq"><p class="my-auto">FAQ</p></router-link>
                   <p class="my-auto">Organization</p>
                   <p class="my-auto">Where to find us</p>
                   <p class="my-auto">Career at Safe Space</p>

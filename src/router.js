@@ -14,6 +14,7 @@ import Planetandmore from './views/Planetandmore.vue'
 import Rocketandmore from './views/Rocketandmore.vue'
 import Gamesandmore from './views/Gamesandmore.vue'
 import Parentinfo from './views/Parentinfo.vue'
+import FAQ from './views/FAQ.vue'
 
 Vue.use(Router, VueMouseParallax)
 
@@ -86,6 +87,11 @@ export default new Router({
       path: '/parentinfo',
       name: 'parentinfo',
       component: Parentinfo
+    },  
+    {
+      path: '/faq',
+      name: 'faq',
+      component: FAQ
     },  
   ]
 })
