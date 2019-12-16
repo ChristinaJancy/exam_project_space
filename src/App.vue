@@ -32,7 +32,7 @@ export default {
 <style>
 #app {
   margin: 0;
-  background-image:linear-gradient(#240015, #060016, #000000);  
+  background-image:linear-gradient(#1b0010, #060016, #000000);  
   background-size: cover;
   padding-top:100px;
 }

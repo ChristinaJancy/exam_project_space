@@ -52,9 +52,9 @@
     </v-navigation-drawer>
 
     <!--APP BAR!-->
-    <v-app-bar app color="black" dark hide-on-scroll elevate-on-scroll>
+    <v-app-bar app src="https://wallpaperaccess.com/full/1268180.jpg" dark hide-on-scroll elevate-on-scroll>
       <template v-slot:img="{ props }">
-        <v-img v-bind="props" gradient="to top right, #000000, #434343"></v-img>
+        <v-img v-bind="props" gradient="to top right, #2400157e, #0000007e"></v-img>
       </template>
       <v-app-bar-nav-icon id="navicon" @click.stop="drawer = !drawer" />
 
