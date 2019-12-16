@@ -44,14 +44,14 @@
                 
                 <v-card-title class="subtitle-1">Help and info</v-card-title>
                
-                <v-card-subtitle class="subtitle-2  white--text">
+                <v-card-subtitle class="overline  white--text">
                   <router-link to="/parentinfo"><p style="color:white;" class="my-auto">Info for Parents and caretakers</p></router-link>
                    <router-link to="/faq"><p style="color:white;" class="my-auto">FAQ</p></router-link>
                 </v-card-subtitle>
               </v-col>
                <v-col cols="auto">
                  <v-card-title class="subtitle-1">Contact us and location</v-card-title>
-                <v-card-subtitle class="subtitle-2 white--text">
+                <v-card-subtitle class="overline white--text">
                 <p class="my-auto">+45 12 34 56 78</p>
                 <p class="my-auto">customerservice@safespace.com</p>
                 <br>
@@ -94,7 +94,7 @@ export default {
 <style scoped>
 @media (max-width:400px){
   p {
-  font-size: 10px;
+  font-size: 8px;
 }
 }
 
