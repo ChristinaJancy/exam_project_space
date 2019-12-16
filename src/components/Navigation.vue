@@ -60,7 +60,7 @@
 
       <router-link to="/">
         <div class="mx-auto mr-3">
-          <v-img max-width="40" :src="require('../assets/logo/logoonly.png')" id="logo"></v-img>
+          <v-img max-width="40" :src="require('../assets/logo/logohighres.png')" id="logo"></v-img>
         </div>
       </router-link>
 
