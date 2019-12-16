@@ -47,13 +47,10 @@
                 <v-card-subtitle class="font-weight-bold white--text">
                   <router-link to="/parentinfo"><p class="my-auto">Info for Parents and caretakers</p></router-link>
                    <router-link to="/faq"><p class="my-auto">FAQ</p></router-link>
-                  <p class="my-auto">Organization</p>
-                  <p class="my-auto">Where to find us</p>
-                  <p class="my-auto">Career at Safe Space</p>
                 </v-card-subtitle>
               </v-col>
                <v-col cols="auto">
-                 <v-card-title class="title">Contact us</v-card-title>
+                 <v-card-title class="title">Contact us and location</v-card-title>
                 <v-card-subtitle class="font-weight-bold white--text">
                   <p class="my-auto">+45 12 34 56 78</p>
                  <p class="my-auto">customerservice@safespace.com</p>
