@@ -1,21 +1,22 @@
 <template>
-  <v-content id="app" >
-<v-row class="mx-auto">
+  <v-content id="app">
+    <v-row class="mx-auto">
+      <v-col>
       <svg viewBox="0 0 700 225">
-    <clipPath id="textClip" class="filled-heading">
-        <text y="70">Theme:</text>
-        <text y="140">Rockets</text>
-        <text y="210"></text>
-        
-        <text y="70">Draw.</text>
-        <text y="140">Be creative.</text>
-        <text y="210"></text>
+        <clipPath id="textClip" class="filled-heading">
+          <text y="70">Theme:</text>
+          <text y="140">Rockets</text>
+          <text y="210" />
 
-        <text y="70">and</text>
-        <text y="140">Have fun!</text>
-        <text y="210"></text>
-    </clipPath>
-    
+          <text y="70">Draw.</text>
+          <text y="140">Be creative.</text>
+          <text y="210" />
+
+          <text y="70">and</text>
+          <text y="140">Have fun!</text>
+          <text y="210" />
+        </clipPath>
+
         <g id="background" clip-path="url(#textClip)">
           <path
             d="m108.51 198.24c-68.576 21.595-114.17 57.226-104.72 2.8714 9.4539-54.355 8.8929 15.643-2.562-21.478-11.455-37.122 36.826-87.851 52.189-57.786 15.362 30.066 3.0926-35.052 57.465 2.1231 54.373 37.175 26.891 0.19388 14.227 40.632-12.664 40.438-1.8729 29-16.602 33.638z"
@@ -103,16 +104,91 @@
             stroke-width="0"
           />
         </g>
-</svg>
-</v-row>
+      </svg>
+      </v-col>
+        <v-col cols="12" md="2">       
+
+<template>
+   <v-form v-model="valid">
+     <strong class="white--text">Submit drawing</strong>
+          <v-text-field
+          dark
+            v-model="firstname"
+            :rules="nameRules"
+            :counter="20"
+            label="First name"
+            required
+          ></v-text-field>
+          <v-text-field
+          dark
+            v-model="lastname"
+            :rules="nameRules"
+            :counter="20"
+            label="Last name"
+            required
+          ></v-text-field>
+            <v-text-field
+          dark
+            v-model="age"
+            label="Age"
+            required
+          ></v-text-field>
+          <v-text-field
+          dark
+            v-model="email"
+            :rules="emailRules"
+            label="E-mail"
+            required
+          ></v-text-field>
+         
+           <v-textarea
+             
+             dark
+            >
+              <template v-slot:label>
+                <div>
+                  About your drawing: <small>(optional)</small>
+                </div>
+              </template>
+            </v-textarea>
+              <v-file-input
+    dark
+    label="File input"
+    filled
+    prepend-icon="mdi-camera"
+  ></v-file-input>
+          <v-btn
+      color="success"
+      class="mr-4"
+    >
+      Send
+    </v-btn>
+
+    <v-btn
+      color="error"
+      class="mr-4"
+      @click="reset"
+    >
+      Cancel
+    </v-btn>
+   </v-form>
+
+</template>
+
+</v-col>
+
+         
+     
+    </v-row>
+
     <v-card id="drawingcard" color="transparent">
       <v-container fluid>
+
         <v-row dense>
           <v-col v-for="card in cards" :key="card.title" cols="12" md="4" sm="6" lg="4" xs="12">
             <v-hover>
               <template v-slot="{ hover }">
                 <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
-                  
                   <v-img
                     id="drawing"
                     :src="card.src"
@@ -152,10 +228,33 @@
         </v-row>
       </v-container>
     </v-card>
-    
   </v-content>
- 
 </template>
+
+<script scoped>
+  export default {
+    data: () => ({
+      valid: true,
+      firstname: '',
+      lastname: '',
+      nameRules: [
+        v => !!v || 'Name is required',
+        v => v.length <= 10 || 'Name must be less than 10 characters',
+      ],
+      email: '',
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid',
+      ],
+      methods: {
+      reset () {
+        this.$refs.form.reset()
+      },
+    },
+    }),
+    
+  }
+</script>
 
 
 <script>
@@ -292,58 +391,77 @@ export default {
 
 /* Basic styling */
 svg {
-    width: 100%;
+  width: 100%;
 }
 .filled-heading {
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 5em;
-    line-height: 0.9;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 5em;
+  line-height: 0.9;
 }
 
 /* Animate the background shapes */
 #background path {
-    animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
-    
-    /* Necessary to keep the SVG objects in place while scaling */
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
+  animation: pulse 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+
+  /* Necessary to keep the SVG objects in place while scaling */
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
 }
 
 /* Reveal the desired lines of text in the desired order */
 #textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
-    animation: showFirst 12s infinite;
+  animation: showFirst 12s infinite;
 }
 #textClip text:nth-of-type(n + 4):nth-of-type(-n + 6) {
-    animation: showSecond 12s infinite;
+  animation: showSecond 12s infinite;
 }
 #textClip text:nth-of-type(n + 7):nth-of-type(-n + 9) {
-    animation: showThird 12s infinite;
+  animation: showThird 12s infinite;
 }
 
 @keyframes pulse {
-    /* Rotating it along with the scale makes it a little bit more fancy */
-    0%, 100% { transform: scale(0) rotate(33deg); }
-    35%, 65% { transform: scale(1) rotate(0deg); }
+  /* Rotating it along with the scale makes it a little bit more fancy */
+  0%,
+  100% {
+    transform: scale(0) rotate(33deg);
+  }
+  35%,
+  65% {
+    transform: scale(1) rotate(0deg);
+  }
 }
 @keyframes showFirst {
-    0%, 33% {
-        opacity: 1;
-    }
-    33.0001%, 100% { opacity: 0; }
+  0%,
+  33% {
+    opacity: 1;
+  }
+  33.0001%,
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes showSecond {
-    33.0001%, 66% {
-        opacity: 1;
-    }
-    0%, 33%, 66.0001%, 100% { opacity: 0; }
+  33.0001%,
+  66% {
+    opacity: 1;
+  }
+  0%,
+  33%,
+  66.0001%,
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes showThird {
-    66.0001%, 99.999% {
-        opacity: 1;
-    }
-    0%, 66%, 100% { opacity: 0; }
+  66.0001%,
+  99.999% {
+    opacity: 1;
+  }
+  0%,
+  66%,
+  100% {
+    opacity: 0;
+  }
 }
-
-
 </style>
