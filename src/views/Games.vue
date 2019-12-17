@@ -132,7 +132,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
             
-                <v-btn color="purple" text>Play</v-btn>
+                <a href="https://elgoog.im/space-invaders/" target="_blank"><v-btn color="purple" text>Play</v-btn></a>
            
 
               <v-spacer></v-spacer>
