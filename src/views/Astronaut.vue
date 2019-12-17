@@ -87,7 +87,7 @@ He strongly believes there could be a nine-year-old somewhere who might appear e
 }
 h2 {
   font-size: 2rem;
-  font-family: "Press Start 2P", cursive;
+
 }
 
 #app{

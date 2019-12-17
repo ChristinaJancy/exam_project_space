@@ -42,16 +42,17 @@
             <v-row dense no-gutters justify="space-between" justify-md="space-between" justify-sm="center">
               <v-col cols="auto">
                 
-                <v-card-title class="subtitle-1">Help and info</v-card-title>
+                <v-card-title><h2>Help and info</h2></v-card-title>
                
-                <v-card-subtitle class="overline  white--text">
+                <v-card-subtitle class="white--text">
                   <router-link to="/parentinfo"><p style="color:white;" class="my-auto">Info for Parents and caretakers</p></router-link>
                    <router-link to="/faq"><p style="color:white;" class="my-auto">FAQ</p></router-link>
                 </v-card-subtitle>
               </v-col>
+
                <v-col cols="auto">
-                 <v-card-title class="subtitle-1">Contact us and location</v-card-title>
-                <v-card-subtitle class="overline white--text">
+                <v-card-title><h2>Contact us and location</h2></v-card-title>
+                <v-card-subtitle class="white--text">
                 <p class="my-auto">+45 12 34 56 78</p>
                 <p class="my-auto">customerservice@safespace.com</p>
                 <br>
@@ -92,9 +93,13 @@ export default {
 </script>
 
 <style scoped>
+h2{
+  font-size:13px;
+}
+
 @media (max-width:400px){
   p {
-  font-size: 8px;
+  font-size: 10px;
 }
 }
 

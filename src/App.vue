@@ -39,6 +39,7 @@ export default {
 p{
 font-family: 'Lato', sans-serif;
 }
+
 h1{
   font-family: "Press Start 2P", cursive;
 }
@@ -47,7 +48,4 @@ h2{
 font-family: 'Audiowide', cursive;
 }
 
-h3{
-
-}
 </style>
