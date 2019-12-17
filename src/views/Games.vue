@@ -98,7 +98,8 @@
    
     <v-col class="mx-auto">
       <v-row class="mx-auto">
-        <v-col>
+        <v-col class="mx-auto my-auto">
+     <v-card-title class="white--text" style="text-align:center;"> Alien Invaders</v-card-title>
 <iframe src="https://funhtml5games.com?embed=spaceinvaders" style="width:800px;height:550px;border:none;" frameborder="0" scrolling="no"></iframe>
 
         </v-col>
