@@ -1,12 +1,12 @@
 <template>
   <v-footer padless>
-    <v-card class="flex" tile>
+    <v-card class="flex" tile color="#f4dc8e">
       <v-img
         src="https://cdn.dribbble.com/users/164052/screenshots/1323970/attachments/186300/footer-bg.jpg"
         height="400"
         gradient="to top right, rgba(120,56,70,.3), rgba(00,00,00,.7)"
       >
-        <v-card-title class="white--text mx-auto my-auto">
+        <v-card-title class="#f4dc8e--text mx-auto my-auto">
           <v-spacer></v-spacer>
 
           <a href="https://facebook.com">
@@ -44,7 +44,7 @@
                 
                 <v-card-title><h2>Help and info</h2></v-card-title>
                
-                <v-card-subtitle class="white--text">
+                <v-card-subtitle class="#f4dc8e--text">
                   <router-link to="/parentinfo"><p style="color:white;" class="my-auto">Info for Parents and caretakers</p></router-link>
                    <router-link to="/faq"><p style="color:white;" class="my-auto">FAQ</p></router-link>
                 </v-card-subtitle>

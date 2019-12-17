@@ -5,7 +5,7 @@
       v-model="drawer"
       app
       hide-overlay
-      color="white"
+      color="#f4dc8e"
       temporary
       floating
       bottom
@@ -183,8 +183,10 @@ export default {
 #search {
   width: 1px;
 }
+
 #login {
   z-index: 9999;
+  color:#ffd037;
 }
 
 #nav {
@@ -192,7 +194,7 @@ export default {
 }
 
 #p{
-  color: #bf7e6a;
+  color: #ff8555;
 }
 
 #navdrawer {

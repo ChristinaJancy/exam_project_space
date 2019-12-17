@@ -40,7 +40,7 @@
 
 <router-link to="/register" target=”_blank”>
        <v-btn
-        color="blue darken-1"
+        color="green darken-5"
         class="ma-2"
        @click="dialog = false"
         small text
@@ -49,7 +49,7 @@
         </v-btn>
        </router-link>
          <v-spacer></v-spacer>
-        <v-btn v-on="on" color="blue darken-1" large text @click="dialog = false">Login</v-btn>
+        <v-btn v-on="on" color="green darken-5" large text @click="dialog = false">Login</v-btn>
       </v-card-actions>
       <v-card-actions>
           <small>(Profile creation opens a new tab)</small>

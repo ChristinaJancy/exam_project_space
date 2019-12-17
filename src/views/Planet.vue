@@ -41,7 +41,7 @@
                <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
-                        <v-expansion-panel-header class="planetpaneltext"><p>About the Sun</p></v-expansion-panel-header>
+                        <v-expansion-panel-header class="planetpaneltext">About the Sun</v-expansion-panel-header>
                         <v-expansion-panel-content>The size of the Sun compared to the largest known stars (red giants) is not very big. However, if compared to the most common type of star in the universe, the red dwarf, the Sun is quite a bit larger. Thus, the Sun is not the biggest type of star in the universe, but it is definitely larger than most.</v-expansion-panel-content>
                       </v-expansion-panel>
                     </v-expansion-panels>
@@ -68,7 +68,7 @@
                <v-col cols="12" md="4" sm="12" class="mx-auto my-auto">
                    <v-expansion-panels inset popout focusable>
                       <v-expansion-panel>
-                        <v-expansion-panel-header class="planetpaneltext"> <p>About Mercury</p></v-expansion-panel-header>
+                        <v-expansion-panel-header class="planetpaneltext">About Mercury</v-expansion-panel-header>
                         <v-expansion-panel-content>“The closest planet to the sun that orbits the sun within only 87.9 earth days, should be the hottest planet in the whole solar system”, one would think. Even though this is not entirely true, one would not be mistaken for thinking that way. Mercury has the most ironic temperature rage in the whole solar system. Since the planet virtually has no atmosphere, it makes it difficult for the sun to travel from the daylight side to the night side. This means that one half of the planet is always extremely hot at +430 degree C, while the other is so cold at -180 degree C. So to live on this planet, you would either burn or freeze to death instantly. </v-expansion-panel-content>
                       </v-expansion-panel>
                     </v-expansion-panels>
@@ -469,7 +469,7 @@ img {
 
 h1 {
   position: absolute;
-  color: #bf7e6a;
+  color: #ffcd2b;
   text-shadow: 4px 8px #000000;
   top: 60%;
   font-size: 40px;
@@ -484,7 +484,7 @@ h1 {
 #pheader,
 #pheader2 {
   font-family: 'Audiowide', cursive;
-  color: rgb(255, 145, 0);
+  color: #ffcd2b;
   text-shadow: 4px 4px #000000;
   font-size:40px;
   line-height: 0.9;
@@ -493,7 +493,7 @@ h1 {
 #app {
   margin-top: -80px;
   position: relative;
-  background-image:linear-gradient(#240015, #060016, #000000);  
+ background-image:linear-gradient(#1b0010, #060016, #000000); 
 }
 
 .particle {
