@@ -1,10 +1,11 @@
 <template>
   <v-content>
    
-      <svg viewBox="-100 40 500 90">
+      <svg viewBox="-100 0 500 200">
         <clipPath id="textClip" class="filled-heading">
-          <text class="display-1" y="70">Frequently Asked</text>
-          <text class="display-1" x="50" y="100">Questions</text>
+          <text y="70">Frequently</text>
+          <text  y="110">asked</text>
+          <text  y="150">Questions</text>
            
         </clipPath>
 
@@ -168,8 +169,8 @@ svg {
 .filled-heading {
   text-transform: uppercase;
 font-family: 'Audiowide', cursive;
-  font-size: 1rem;
-  line-height: 0.4;
+  font-size: 2.5rem;
+  line-height: 0.9;
 }
 
 /* Animate the background shapes */
