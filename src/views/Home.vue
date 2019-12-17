@@ -84,7 +84,7 @@ export default {
 
 
 .main-title {
-  color:rgb(255, 226, 38);
+  color: #ffcd2b;
   z-index: 1;
   position: absolute;
   text-align: center;

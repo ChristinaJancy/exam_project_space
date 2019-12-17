@@ -648,14 +648,16 @@
     <v-col cols="auto" class="mx-auto my-auto">
       <v-row>
         <v-col>
-          <h2 style="color:white;" >Did you know?</h2>
+          <h2 style="color:white; text-align:center;" >Did you know?</h2>
         </v-col>
       </v-row>
       <v-row>
         <v-col>
+            <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
           <p
             style="color:white;"
           >A trip to the moon, isn't like any other trips. First and foremost a trip like that requires a specific form for transportation, rockets. Space rockets are designed to travel in an extremely high speed, releasing some of its weight load behind as it accelerates towards space. The gravity down on earth is greater than up in space, which is why you see a massive fire frames burning out giving the rocket enough pressure to outwork the gravity. The weight load that is being thrown off the rocket are the empty gas tanks, that the rocket no longer needs, and by releasing them off, the rocket gets lighter and allows it to finish the trip to space. In fact rockets works more efficiently in space than in the atmosphere.</p>
+            </div>
         </v-col>
       </v-row>
     </v-col>

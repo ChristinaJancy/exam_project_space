@@ -22,10 +22,12 @@
 
       <v-row>
         <v-col>
+           <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
           <p
             style="color:white;"
           >What's the first thing you think about when you hear the word “space”? Alot comes to mind because the space contains of a lot things that has a lot of importance to our very existence. First and foremost, space is very HUGE, with endless possibilities to learn and explore more knowledge. When you are down on earth looking up in the sky in a calm dark night, what would you be looking at? You’d most likely be watching the stars bright on your face, and probably the moon as well. There are endless and countless numbers of stars in the sky and if you have noticed, it's totally impossible to count them with your bare eyes. 
             </p>
+           </div>
         </v-col>
       </v-row>
       <v-row>
@@ -36,6 +38,7 @@
       </v-row>
       <v-row>
         <v-col>
+           <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
           <p
             style="color:white;"
           >Have you ever wondered why objects fall back down when you toss them up? Gravity 
@@ -43,6 +46,7 @@ Everytime something leaves the ground, that object instantly starts coming back 
 and pushing everything around and in space, fixed at their right positions. Everything around us that has a mass is affected by gravity, even light itself. 
 
 </p>
+           </div>
         </v-col>
       </v-row>
     </v-col>
@@ -57,7 +61,6 @@ and pushing everything around and in space, fixed at their right positions. Ever
 }
 h2 {
   font-size: 2rem;
-  font-family: "Press Start 2P", cursive;
 }
 
 #app{
