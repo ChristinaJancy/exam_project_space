@@ -104,12 +104,17 @@
         ></iframe>
         </v-col>
         <v-col cols="12" md="4" sm="12" class="my-auto">
+           <h3 class="white--text">About the game</h3>
           <p text-md-left text-sm-left class="white--text">Space Invaders is a classic arcade game from 1978.
-            <br>
-            How to play:
+            <br><br><p>
+
+            <h3 class="white--text">How to play:</h3>
+            
+            <p text-md-left text-sm-left class="white--text"> 
+            PC:
             <br>
             Control with ARROWS, shoot with SPACE - simple right? - hit 'em all, and don't get hit!</p>
-            <br><br>
+            <br>
             <small class="white--text">(To restart game, page needs to get reloaded)</small>
         </v-col>
       </v-row>
@@ -124,7 +129,16 @@
         ></iframe>
         </v-col>
         <v-col cols="12" md="4" sm="12" class="my-auto">
-           <p text-md-left text-sm-left class="white--text">Neptune blue is about... </p>
+           <h3 class="white--text">About the game</h3>
+           <p text-md-left text-sm-left class="white--text">Neptune blue is about dodging all the meteors coming at you - gotta be fast! </p>
+              <br>
+             <h3 class="white--text">How to play</h3>
+             <p text-md-left text-sm-left class="white--text">
+              Clicking outside the game will pause it - click on it again to resume.
+              <br>
+              PC: 
+              <br>Control with A/D or arrows. 
+           </p>
         </v-col>
       </v-row>
       
@@ -139,9 +153,14 @@
         </v-col>
         <v-col cols="12" md="4" sm="12" class="my-auto">
           <p text-md-left text-sm-left class="white--text">
+            Helicoptergame is about dodging obstacles, by controlling the helicopter up and down. 
+            <br>
+            <br>  
             How to play:
             <br>
-            When holding down left mouse button helicopter goes, letting go of the button make it go down - sounds simple right? However, this game might be more challenging than you think - see how far you can go!
+            <br>
+            PC: <br>
+            When holding down left-mouse-button(LMB) helicopter goes up, letting go of the button make it go down - sounds simple right? However, this game might be more challenging than you think - see how far you can go!
             </p>
         </v-col>
       </v-row>
@@ -198,6 +217,9 @@ svg {
     max-width:590px;
     max-height:400px;
   }
+  #gameheli{
+    display: none;
+  }
 }
 
 @media (max-width: 660px){
@@ -205,9 +227,7 @@ svg {
     max-width:400px;
     max-height: 300px;
   }
-    #gameheli{
-    display: none;
-  }
+    
 }
 
 @media (max-width: 420px){
