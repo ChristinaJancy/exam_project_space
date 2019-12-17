@@ -134,10 +134,18 @@
               <br>
              <h3 class="white--text">How to play</h3>
              <p text-md-left text-sm-left class="white--text">
-              Clicking outside the game will pause it - click on it again to resume.
-              <br>
+            
+            
               PC: 
               <br>Control with A/D or arrows. 
+              <br>
+              <br>
+              DISCLAIMER: 
+              <br>
+              The game only works with the use of a keyboard
+              <br><br>
+                <small>(Clicking outside the game will pause it - click on it again to resume.)</small>
+              
            </p>
         </v-col>
       </v-row>
@@ -152,13 +160,12 @@
       </iframe>
         </v-col>
         <v-col cols="12" md="4" sm="12" class="my-auto">
+           <h3 class="white--text">About the game</h3>
           <p text-md-left text-sm-left class="white--text">
-            Helicoptergame is about dodging obstacles, by controlling the helicopter up and down. 
-            <br>
+            Helicoptergame is about dodging obstacles, by controlling the helicopter up and down. </p>  
             <br>  
-            How to play:
-            <br>
-            <br>
+         <h3 class="white--text">How to play</h3>
+            <p text-md-left text-sm-left class="white--text">
             PC: <br>
             When holding down left-mouse-button(LMB) helicopter goes up, letting go of the button make it go down - sounds simple right? However, this game might be more challenging than you think - see how far you can go!
             </p>
@@ -235,6 +242,9 @@ svg {
     max-width:300px;
     max-height: 200px;
   }
+  #gameneptune{
+  display: none;
+  }
 }
 
 @media (max-width: 300px){
@@ -242,8 +252,6 @@ svg {
     max-width: 150px;
     max-height: 100px;
   }
-  #gameneptune{
-  display: none;
-  }
+  
 }
 </style>
