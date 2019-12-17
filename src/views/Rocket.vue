@@ -648,7 +648,7 @@
     <v-col cols="auto" class="mx-auto my-auto">
       <v-row>
         <v-col>
-          <p style="color:white;" class="display-3">Did you know?</p>
+          <h2 style="color:white;" >Did you know?</h2>
         </v-col>
       </v-row>
       <v-row>
@@ -1668,9 +1668,9 @@
 
 
 <style scoped>
-h2 {
+h3 {
   font-size: 2rem;
-  font-family: "Press Start 2P", cursive;
+
 }
 /*Text */
 /* Basic styling */

@@ -96,7 +96,7 @@
           />
         </g>
       </svg>
-      <div class="text-justify pa-5" style="background-color:white;" max-width="500" max-height="800">
+ <div class="text-justify pa-5 mx-auto" style="background-color:white; max-width:800px;">
 <h2 class="display-1" style="text-align:center;">Welcome to Safe Space.</h2>
 <v-divider></v-divider>
 <br>

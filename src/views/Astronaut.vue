@@ -20,10 +20,12 @@
       </v-row>
       <v-row>
         <v-col>
+            <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
           <p
             style="color:white;"
           >Astronomy is an interesting subject and a very exciting topic to learn or talk about. Throughout the years, astronomy has always been a topic discussed only by adults, but things are changing. We are experiencing more and more kids wanting to learn more about space and engage in the discussion. More and more kids dreams about becoming an astronaut when they get older, and this page will help more kids to understand more about astronauts and what it takes to become one. 
 </p>
+            </div>
         </v-col>
       </v-row>
     </v-col>
@@ -44,10 +46,12 @@
       </v-row>
       <v-row>
         <v-col>
+            <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
           <p
             style="color:white;"
           >We all know the first man to land on the moon, who has inspired a lot of kids to want to learn more about space. In April 1969 Neil Armstrong landed on the moon, as the very first human being to ever do that, and that day was marked as history. Armstrong spent 8 days and 14 hours in space gathering information about what we needed to learn about space. 
-</p>
+          </p>
+            </div>
         </v-col>
       </v-row>
     </v-col>
@@ -60,6 +64,7 @@
       </v-row>
       <v-row>
         <v-col>
+           <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
           <p
             style="color:white;"
           > Dominic Anthony "Tony" Antonelli (born August 23, 1967) is a retired NASA astronaut. Tony Antonelli was born in Detroit, Michigan, and joined Nasa in 2000 after working as a test pilot in the US Navy.
@@ -71,6 +76,7 @@ Tony insists that as a nine-year-old, “you wouldn’t have picked me out from 
 He strongly believes there could be a nine-year-old somewhere who might appear equally “average” but will one day step foot on Mars. Space travel has long seemed like it’s reserved for young, American ready-made Bruce Willis types - but he strongly believed this is not true.
 “Aside from needing a college degree there isn’t too much else in basic qualifications for Nasa and the European Space Agency,” he says.
 </p>
+</div>
         </v-col>
       </v-row>
     </v-col>
