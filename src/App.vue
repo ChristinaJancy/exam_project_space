@@ -36,4 +36,7 @@ export default {
   background-size: cover;
   padding-top:100px;
 }
+p{
+font-family: 'Lato', sans-serif;
+}
 </style>
