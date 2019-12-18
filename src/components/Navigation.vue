@@ -11,6 +11,7 @@
       bottom
     >
       <v-list style="color: white;">
+        <div>
         <v-list-item-content>
           <v-list-item-title style="text-align:center;" class="title">All Categories</v-list-item-title>
           <v-divider></v-divider>
@@ -19,10 +20,10 @@
         <!-- Learn about space category-->
         <router-link to="/planetandmore">
           <v-list-item>
-            <v-icon>mdi-brightness-5</v-icon>
+            <v-icon style="color: white;">mdi-brightness-5</v-icon>
 
             <v-list-item-content>
-              <v-list-item-title>Outer Space</v-list-item-title>
+              <v-list-item-title style="color: white;">Outer Space</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
@@ -30,10 +31,10 @@
         <!-- This quaters theme: rockets! category-->
         <router-link to="/rocketandmore">
           <v-list-item>
-            <v-icon>mdi-rocket</v-icon>
+            <v-icon style="color: white;">mdi-rocket</v-icon>
 
             <v-list-item-content>
-              <v-list-item-title>This quarters them: Rockets!</v-list-item-title>
+              <v-list-item-title style="color: white;">This quarters them: Rockets!</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
@@ -41,13 +42,14 @@
         <!-- Event and fun stuff category-->
         <router-link to="/gamesandmore">
           <v-list-item>
-            <v-icon>mdi-space-invaders</v-icon>
+            <v-icon style="color: white;">mdi-space-invaders</v-icon>
 
             <v-list-item-content>
-              <v-list-item-title>Fun stuff!</v-list-item-title>
+              <v-list-item-title style="color: white;">Fun stuff!</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
+        </div>
       </v-list>
     </v-navigation-drawer>
 
