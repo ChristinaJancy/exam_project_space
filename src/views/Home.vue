@@ -6,8 +6,6 @@
         <div class="main-title">
           <h1 absolute>Safe Space</h1>
         </div>
-
-
       <v-col
           cols="auto"
         >

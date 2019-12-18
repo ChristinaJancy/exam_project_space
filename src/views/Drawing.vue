@@ -275,12 +275,12 @@ export default {
       {
         title: "Made by Trine",
         age: "Age: 10",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+        src: "https://dygtyjqp7pi0m.cloudfront.net/i/36896/32414648_3.jpg?v=8D682472B7FF980"
       },
       {
         title: "Made by Line",
         age: "Age: 8",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg"
+        src: "https://www.scantegrity.org/wp-content/uploads/2019/08/drawings_of_rocket_creative_colorful_rocket_with_a_red_fire_and_some_yellow_stars_and_moon_with_saturn_and_green_planet-e1566356746691-1024x768.jpg"
       },
       {
         title: "Made by Christina",
@@ -290,7 +290,7 @@ export default {
       {
         title: "Made by Jacob",
         age: "Age: 6",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+        src: "https://www.abc.net.au/news/image/6438536-3x2-700x467.jpg"
       },
       {
         title: "Made by Adrian",
@@ -301,7 +301,7 @@ export default {
       {
         title: "Made by Jason",
         age: "Age: 13",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+        src: "https://images.squarespace-cdn.com/content/v1/5524872fe4b04f1005fbd76f/1478463021359-AWJX92WRT5IBNTC4KN7D/ke17ZwdGBToddI8pDm48kPgiGjHa2OkZdy-1ylaUUbx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQu-DfY1QR06SwvlTA1SDGp6AwfU1oXHcjiQviRJTvRaFxCWMYU6Ot9PFeH8Uf2eoQ/Space_1.jpeg?format=500wg"
       },
       {
         title: "Made by Ean",
@@ -310,10 +310,10 @@ export default {
           "https://drawingbeta.com/wp-content/uploads/kids-drawing-of-space-ship-and-spaceship-drawing-for-kids-free-download-best-spaceship.jpg"
       },
       {
-        title: "Made by David",
+        title: "Made by Emma",
         age: "Age: 12",
         src:
-          "https://i.pinimg.com/originals/78/04/80/7804802d3af3129c3dfdb2adb91a769f.jpg"
+          "https://images.boredomfiles.com/wp-content/uploads/2018/08/spaceship-kids-731x556.jpg"
       },
       {
         title: "Made by Kristian",
@@ -322,14 +322,14 @@ export default {
           "https://st2.depositphotos.com/4118707/7623/i/950/depositphotos_76232459-stock-photo-children-drawing-space-planet-rocket.jpg"
       },
       {
-        title: "Made by Trine",
-        age: "Age: 10",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+        title: "Made by Johannes",
+        age: "Age: 6",
+        src: "https://soundtoharbor.com/wp-content/uploads/2019/01/picture-447176_960_720-320x231.jpg"
       },
       {
         title: "Made by Line",
         age: "Age: 8",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg"
+        src: "https://www.scantegrity.org/wp-content/uploads/2019/08/drawings_of_rocket_creative_colorful_rocket_with_a_red_fire_and_some_yellow_stars_and_moon_with_saturn_and_green_planet-e1566356746691-1024x768.jpg"
       },
       {
         title: "Made by Christina",
@@ -337,9 +337,9 @@ export default {
         src: "https://i.ytimg.com/vi/dpnLO4LXIQ4/maxresdefault.jpg"
       },
       {
-        title: "Made by Jakob",
+        title: "Made by Jacob",
         age: "Age: 6",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+        src: "https://i.pinimg.com/originals/c2/0a/fd/c20afd2175ae63ebbc24f8aa0ed989fe.jpg"
       },
       {
         title: "Made by Adrian",
@@ -348,9 +348,9 @@ export default {
           "https://static9.depositphotos.com/1719616/1206/i/950/depositphotos_12064029-stock-photo-space-rocket-childrens-drawing.jpg"
       },
       {
-        title: "Made by Jason",
-        age: "Age: 13",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+        title: "Made by Simon",
+        age: "Age: 4",
+        src: "https://media.istockphoto.com/illustrations/childs-drawing-space-rockets-illustration-id178072700?k=6&m=178072700&s=612x612&w=0&h=K6bqykSwhhsjt_IEekrnrNW1D1Vwqsmtr4BkPRZGpss="
       },
       {
         title: "Made by Ean",

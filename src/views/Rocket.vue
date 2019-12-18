@@ -1,6 +1,14 @@
 <template>
   <v-content>
-
+     <v-col cols="auto" offset-md="3">
+        <v-btn
+          ref="button"
+          color="yellow"
+          @click="$vuetify.goTo(target, options)"
+        >
+          Click me:)
+        </v-btn>
+      </v-col>
 <svg
     id="egf0o7rysqyc1"
     xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +16,6 @@
     viewBox="-20 0 250 300"
     shape-rendering="geometricPrecision"
     text-rendering="geometricPrecision"
-    
   >
       <svg 
       viewBox="0 0 1400 1700">
@@ -244,6 +251,7 @@
         </g>
       </svg>
 
+ 
  <g
       id="egf0o7rysqyc2"
       transform="matrix(0.29915235132477 0 0 0.28461538471954 74.19830388500002 179.51598299999998)"
@@ -622,17 +630,35 @@
       class="mx-auto my-auto"
       style="text-align:center;"
     >
-      <h2 style="color:white;">Rocket Diagram</h2>
+      <h2 style="color:white;">Diagram of UShuttle</h2>
     </v-parallax>
 
+
     <v-col>
+     <v-row>
+        <v-col cols="12" md="6" sm="12" class="mx-auto my-auto">
+          <p style="color:white;text-align:center;">Here you see a diagram of the U.S Shuttle</p>
+        </v-col>
+        <v-col cols="12" md="6" sm="12">
+          <v-img src="../assets/rocket/bluebird9.jpg" relative></v-img>
+        </v-col>
+      </v-row>
+
       <v-row>
+        <v-col cols="auto">
+          <v-img src="../assets/rocket/bluerockettop.png" relative></v-img>
+        </v-col>
         <v-col cols="auto" class="mx-auto my-auto">
           <p style="color:white;">Here you see a diagram of the U.S Shuttle</p>
         </v-col>
+      </v-row>
 
+        <v-row>
         <v-col cols="auto" class="mx-auto my-auto">
-          <v-img src="../assets/rocket/rocketdiagram.jpg"></v-img>
+          <p style="color:white;">Here you see a diagram of the U.S Shuttle</p>
+        </v-col>
+        <v-col cols="auto">
+          <v-img src="../assets/rocket/bluerocketbot.jpg" relative></v-img>
         </v-col>
       </v-row>
     </v-col>
@@ -663,6 +689,39 @@
     </v-col>
   </v-content>
 </template>
+
+
+<script scoped>
+  import * as easings from 'vuetify/es5/services/goto/easing-patterns'
+
+  export default {
+    data () {
+      return {
+        type: 'number',
+        number: 2000,
+        selector: '#scroll-with-options',
+        duration: 300,
+        offset: 0,
+        easing: 'easeInOutCubic',
+        easings: Object.keys(easings),
+      }
+    },
+    computed: {
+      target () {
+        const value = this[this.type]
+        if (!isNaN(value)) return Number(value)
+        else return value
+      },
+      options () {
+        return {
+          duration: this.duration,
+          offset: this.offset,
+          easing: this.easing,
+        }
+      },
+    },
+  }
+</script>
 
 <style lang="scss" scoped>
 #egf0o7rysqyc3_to {
@@ -1667,9 +1726,8 @@
 </style>
 
 
-
-
 <style scoped>
+
 h3 {
   font-size: 2rem;
 
