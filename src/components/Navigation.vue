@@ -5,7 +5,7 @@
       v-model="drawer"
       app
       hide-overlay
-      color="#f4dc8e"
+      color="white"
       temporary
       floating
       bottom

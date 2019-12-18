@@ -183,9 +183,8 @@
 
     <v-card id="drawingcard" color="transparent">
       <v-container fluid>
-
         <v-row dense>
-          <v-col v-for="card in cards" :key="card.title" cols="12" md="4" sm="6" lg="4" xs="12">
+          <v-col v-for="card in cards" :key="card.title" cols="12" md="4" sm="12" xs="12">
             <v-hover>
               <template v-slot="{ hover }">
                 <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
@@ -289,7 +288,7 @@ export default {
         src: "https://i.ytimg.com/vi/dpnLO4LXIQ4/maxresdefault.jpg"
       },
       {
-        title: "Made by Jakob",
+        title: "Made by Jacob",
         age: "Age: 6",
         src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg"
       },
