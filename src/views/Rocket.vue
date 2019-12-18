@@ -630,14 +630,17 @@
       class="mx-auto my-auto"
       style="text-align:center;"
     >
-      <h2 style="color:white;">Diagram of UShuttle</h2>
+      <h2 style="color:white;">Diagrams of Space rocket and vehicles</h2>
     </v-parallax>
 
 
     <v-col>
      <v-row>
         <v-col cols="12" md="6" sm="12" class="mx-auto my-auto">
-          <p style="color:white;text-align:center;">Here you see a diagram of the U.S Shuttle</p>
+           <div class="text-justify pa-5 mx-auto" style="max-width:400px;">
+          <h2 style="color:white;text-align:center">Bird 9</h2>
+          <p style="color:white;text-align:center; font-size:15;">- The first flying space truck, to be able to be used more than once.</p>
+           </div>
         </v-col>
         <v-col cols="12" md="6" sm="12">
           <v-img src="../assets/rocket/bluebird9.jpg" relative></v-img>
@@ -645,19 +648,31 @@
       </v-row>
 
       <v-row>
+         <v-col cols="auto" class="mx-auto my-auto" id="columnshow2">
+          <div class="text-justify pa-5 mx-auto" style="max-width:400px;">
+          <h2 style="color:white;text-align:center">Top part of a space rocket</h2>
+          <p style="color:white;">How the top part of a space rockets work.</p>
+          </div>
+        </v-col>
         <v-col cols="auto">
           <v-img src="../assets/rocket/bluerockettop.png" relative></v-img>
         </v-col>
-        <v-col cols="auto" class="mx-auto my-auto">
-          <p style="color:white;">Here you see a diagram of the U.S Shuttle</p>
+         <v-col cols="auto" class="mx-auto my-auto" id="columnshow1">
+          <div class="text-justify pa-5 mx-auto" style="max-width:400px;">
+          <h2 style="color:white;text-align:center">Top part of a space rocket</h2>
+          <p style="color:white;">How the top part of a space rockets work.</p>
+          </div>
         </v-col>
       </v-row>
 
         <v-row>
-        <v-col cols="auto" class="mx-auto my-auto">
-          <p style="color:white;">Here you see a diagram of the U.S Shuttle</p>
+        <v-col cols="12" md="6" sm="12" class="mx-auto my-auto">
+          <div class="text-justify pa-5 mx-auto" style="max-width:400px;">
+          <h2 style="color:white;text-align:center">Bottom part of a space rocket</h2>
+          <p style="color:white;text-align:center">- and why it is important </p>
+          </div>
         </v-col>
-        <v-col cols="auto">
+        <v-col cols="12" md="6" sm="12">
           <v-img src="../assets/rocket/bluerocketbot.jpg" relative></v-img>
         </v-col>
       </v-row>
@@ -668,7 +683,7 @@
       class="mx-auto my-auto"
       style="text-align:center;"
     >
-      <h2>About rockets</h2>
+      <h2>General info about rockets</h2>
     </v-parallax>
 
     <v-col cols="auto" class="mx-auto my-auto">
@@ -680,6 +695,9 @@
       <v-row>
         <v-col>
             <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
+               <v-col>
+          <v-img src="../assets/rocket/bluerocketbot.jpg" relative></v-img>
+        </v-col>
           <p
             style="color:white;"
           >A trip to the moon, isn't like any other trips. First and foremost a trip like that requires a specific form for transportation, rockets. Space rockets are designed to travel in an extremely high speed, releasing some of its weight load behind as it accelerates towards space. The gravity down on earth is greater than up in space, which is why you see a massive fire frames burning out giving the rocket enough pressure to outwork the gravity. The weight load that is being thrown off the rocket are the empty gas tanks, that the rocket no longer needs, and by releasing them off, the rocket gets lighter and allows it to finish the trip to space. In fact rockets works more efficiently in space than in the atmosphere.</p>
@@ -1745,6 +1763,10 @@ font-family: 'Audiowide', cursive;
   line-height: 0.9;
 }
 
+#columnshow2{
+  display:none;
+}
+
 /* Animate the background shapes */
 #background path {
   animation: pulse 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
@@ -1783,6 +1805,15 @@ font-family: 'Audiowide', cursive;
   35%,
   65% {
     transform: scale(1) rotate(0deg);
+  }
+}
+
+@media (max-width:1205px){
+  #columnshow2{
+    display: flex;
+  }
+  #columnshow1{
+    display:none;
   }
 }
 </style>

@@ -1,12 +1,7 @@
 <template>
     <v-content id="app">
          <h2 style="text-align:center; color:white;">Events</h2>
-
           <v-img src="https://www.rmg.co.uk/sites/default/files/styles/banner/public/AAB150729_Future_Spacecraft_banner.jpg?itok=r0suLH54"></v-img>
-     
-    
-
-
     <v-parallax
       src="../assets/rocket/home_electron_bg.png"
       class="mx-auto my-auto"

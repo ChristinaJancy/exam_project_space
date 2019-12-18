@@ -3,7 +3,7 @@
     
       <!-- Navigation -->
       <Navigation></Navigation>
-<br>
+      <br>
       <router-view />
 
       <Footer></Footer>

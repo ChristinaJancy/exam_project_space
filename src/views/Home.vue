@@ -1,5 +1,24 @@
 <template>
-  <v-content>
+  <v-content id="home">
+     <vue-particles
+        class="particle"
+        color="#ffffff"
+        :particleOpacity="0.9"
+        linesColor="#ffffff"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="1"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="50"
+        :moveSpeed="3"
+        :hoverEffect="false"
+        hoverMode="grab"
+        :clickEffect="false"
+        clickMode="push"
+      ></vue-particles>
+
     <!-- Parallax begins (no framework) -->
 <v-col cols="auto" class="mx-auto">
   <v-row class="mx-auto my-auto" justify="center">
@@ -94,6 +113,17 @@ export default {
     text-transform: uppercase;
     margin-top: 150px;
   }
+}
+
+#home{
+  position: relative;
+}
+
+.particle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top:-20px;
 }
 
 p{

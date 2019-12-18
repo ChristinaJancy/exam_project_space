@@ -5,14 +5,14 @@
       v-model="drawer"
       app
       hide-overlay
-      color="white"
+      color="black"
       temporary
       floating
       bottom
     >
-      <v-list>
+      <v-list style="color: white;">
         <v-list-item-content>
-          <v-list-item-title class="title">All Categories</v-list-item-title>
+          <v-list-item-title style="text-align:center;" class="title">All Categories</v-list-item-title>
           <v-divider></v-divider>
         </v-list-item-content>
 
@@ -52,7 +52,7 @@
     </v-navigation-drawer>
 
     <!--APP BAR!-->
-    <v-app-bar app src="https://wallpaperaccess.com/full/1268180.jpg" dark hide-on-scroll elevate-on-scroll>
+    <v-app-bar app color="#000000e7" dark hide-on-scroll elevate-on-scroll>
       <template v-slot:img="{ props }">
         <v-img v-bind="props" gradient="to top right, #000000, #0000007e"></v-img>
       </template>
@@ -194,7 +194,7 @@ export default {
 }
 
 #p{
-  color: #ff8555;
+  color: #e9e9e9;
 }
 
 #navdrawer {
