@@ -31,10 +31,10 @@ export default {
 
 <style>
 #app {
-  margin: 0;
+  margin: auto;
   background-image:linear-gradient(#1b0010, #060016, #000000);  
   background-size: cover;
-  padding-top:100px;
+
 }
 p{
 font-family: 'Lato', sans-serif;

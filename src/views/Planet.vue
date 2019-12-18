@@ -491,7 +491,8 @@ h1 {
 }
 
 #app {
-  margin-top: -80px;
+  margin: auto;
+  padding-top:120px;
   position: relative;
  background-image:linear-gradient(#1b0010, #060016, #000000); 
 }

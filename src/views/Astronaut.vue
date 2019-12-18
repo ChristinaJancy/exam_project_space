@@ -96,8 +96,5 @@ h2 {
 
 }
 
-#app{
-    background:black;
-    margin-top:-70px;
-}
+
 </style>

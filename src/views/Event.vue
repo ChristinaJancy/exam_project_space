@@ -43,7 +43,7 @@ h2 {
 
 #app{
     background:black;
-    margin-top:-50px;
+ 
 }
 
 </style>
