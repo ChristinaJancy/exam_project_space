@@ -1,14 +1,21 @@
 <template>
   <v-content>
-     <v-col cols="auto" offset-md="3">
-        <v-btn
+    <v-row justify="center">
+     <v-col cols="6">
+        <v-btn id="btnscroll"
           ref="button"
-          color="yellow"
+          color="white"
           @click="$vuetify.goTo(target, options)"
+          icon
+          relative
+          dark
+          x-large
+          style="text-shadow:0px 7px yellow;"
         >
-          Click me:)
+         <v-icon>mdi-arrow-down-bold</v-icon>
         </v-btn>
       </v-col>
+    </v-row>
 <svg
     id="egf0o7rysqyc1"
     xmlns="http://www.w3.org/2000/svg"
@@ -1816,5 +1823,45 @@ font-family: 'Audiowide', cursive;
     display:none;
   }
 }
+
+#btnscroll{
+  margin-bottom:-75vh;
+  margin-right:-50px;
+}
+
+@media (max-width:900px){
+#btnscroll{
+   margin-bottom:-50vh;
+     margin-right:-30px;
+
+}
+}
+
+@media (max-width:600px){
+#btnscroll{
+   margin-bottom:-40vh;
+   margin-right:-20px;
+}
+}
+
+
+@media (max-width:500px){
+#btnscroll{
+   margin-bottom:-30vh;
+   margin-right:-15px;
+}
+}
+@media (max-width:350px){
+#btnscroll{
+   margin-bottom:-23vh;
+   margin-left: -25px;
+   margin-right:0;
+}
+}
+
+
+
+
+          
 </style>
 
