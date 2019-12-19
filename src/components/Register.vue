@@ -111,6 +111,7 @@
       </v-card>
     </v-dialog>
   </v-card>
+  <br><br>
   </v-app>
 </template>
 
@@ -282,6 +283,8 @@ As long as the website and the information and services on the website are provi
 <style lang="scss">
 #register {
   align-self: center;
+  margin-top:120px;
+}
   
 @media (max-width:400){
   #register{
@@ -290,7 +293,7 @@ As long as the website and the information and services on the website are provi
   }
 }
 
-}
+
 
 </style>
 
