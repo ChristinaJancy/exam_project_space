@@ -1,6 +1,7 @@
 <template>
 <v-content id="app">
-        <v-img style="margin-top:-80px;" src="https://www.careergirls.org/wp-content/uploads/2015/06/Astronaut_1920x1080.jpg"></v-img>
+  <h2 style="text-align:center; color:white;">Astronaut</h2>
+        <v-img src="https://www.careergirls.org/wp-content/uploads/2015/06/Astronaut_1920x1080.jpg"></v-img>
    <v-parallax
       src="../assets/rocket/home_electron_bg.png"
       class="mx-auto my-auto"
@@ -93,5 +94,7 @@ h2 {
 
 }
 
-
+#app{
+      background:black;
+}
 </style>
