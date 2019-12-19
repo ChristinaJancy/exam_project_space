@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app">
+  <v-app>
 
       <vue-particles
         class="particle"
@@ -491,7 +491,7 @@ h1 {
 }
 
 #app {
-  margin: auto;
+  margin-top: -10;
   padding-top:120px;
   position: relative;
  background-image:linear-gradient(#1b0010, #060016, #000000); 

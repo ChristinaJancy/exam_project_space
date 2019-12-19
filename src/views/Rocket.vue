@@ -633,7 +633,7 @@
 
 
     <v-parallax
-      src="../assets/rocket/home_electron_bg.png"
+      src="../assets/rocket/spaceparallax.jpg"
       class="mx-auto my-auto"
       style="text-align:center;"
     >
@@ -686,7 +686,7 @@
     </v-col>
 
     <v-parallax
-      src="../assets/rocket/home_electron_bg.png"
+      src="../assets/rocket/home_launch.jpg"
       class="mx-auto my-auto"
       style="text-align:center;"
     >
@@ -703,7 +703,7 @@
         <v-col>
             <div class="text-justify pa-5 mx-auto" style="max-width:800px;">
                <v-col>
-          <v-img src="../assets/rocket/bluerocketbot.jpg" relative></v-img>
+          <v-img src="../assets/rocket/spacerocket.jpg" relative></v-img>
         </v-col>
           <p
             style="color:white;"
