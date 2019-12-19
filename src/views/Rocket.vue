@@ -718,7 +718,7 @@
         type: 'number',
         number: 2000,
         selector: '#scroll-with-options',
-        duration: 300,
+        duration: 950,
         offset: 0,
         easing: 'easeInOutCubic',
         easings: Object.keys(easings),
