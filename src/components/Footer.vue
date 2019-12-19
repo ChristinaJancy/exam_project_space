@@ -8,7 +8,7 @@
       >
         <v-card-title class="#f4dc8e--text mx-auto my-auto">
           <v-spacer></v-spacer>
-
+          
           <a href="https://facebook.com">
             <v-btn dark icon>
               <i class="fab fa-facebook-square"></i>
@@ -64,10 +64,23 @@
             </v-row>
             </v-col>
           </v-container>
-          
+ 
         </div>
       </v-img>
+      <v-card-text class="py-2 white--text text-left black mx-auto">
+       <v-btn
+          ref="button"
+          block
+          color="white"
+          style="text-shadow:0px 3px purple;"
+          @click="$vuetify.goTo(target, options)"
+          icon
+        >
+          <v-icon>mdi-arrow-up-bold</v-icon>
+        </v-btn>
+      </v-card-text>
       <v-card-text class="py-2 white--text text-center black">
+       
         {{ new Date().getFullYear() }} —
         <strong>Safe Space</strong>
       </v-card-text>
@@ -89,7 +102,38 @@ export default {
     source: String
   }
 };
- 
+</script>
+
+<script scoped>
+  import * as easings from 'vuetify/es5/services/goto/easing-patterns'
+
+  export default {
+    data () {
+      return {
+        type: 'number',
+        number: 0,
+        selector: '#scroll-with-options',
+        duration: 950,
+        offset: 0,
+        easing: 'easeInOutCubic',
+        easings: Object.keys(easings),
+      }
+    },
+    computed: {
+      target () {
+        const value = this[this.type]
+        if (!isNaN(value)) return Number(value)
+        else return value
+      },
+      options () {
+        return {
+          duration: this.duration,
+          offset: this.offset,
+          easing: this.easing,
+        }
+      },
+    },
+  }
 </script>
 
 <style scoped>
