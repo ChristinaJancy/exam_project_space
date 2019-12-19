@@ -68,9 +68,9 @@
         </div>
       </v-img>
       <v-card-text class="py-2 white--text text-left black mx-auto">
+        <div style="text-align:center;">
        <v-btn
           ref="button"
-          block
           color="white"
           style="text-shadow:0px 3px purple;"
           @click="$vuetify.goTo(target, options)"
@@ -78,6 +78,7 @@
         >
           <v-icon>mdi-arrow-up-bold</v-icon>
         </v-btn>
+        </div>
       </v-card-text>
       <v-card-text class="py-2 white--text text-center black">
        
