@@ -10,7 +10,7 @@
   "dependencies": {
     "cesium": "^1.64.0",
     "core-js": "^3.4.3",
-    "firebase-admin": "^8.8.0",
+    "firebase-admin": "^11.4.1",
     "haml": "^0.4.3",
     "rellax": "^1.10.0",
     "vue": "^2.6.10",
